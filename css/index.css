@@ -11,7 +11,10 @@ header h1 {
     margin: 0;
 }
 
-header .icono
+header .icono {
+    font-size: 2em;
+    color: #F5E6D3;
+}
 
 nav {
     display: flex;
