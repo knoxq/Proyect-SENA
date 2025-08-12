@@ -8,7 +8,7 @@ header {
 nav {
     display: flex;
     justify-content: baseline;
-    align-items: baseline;
+    align-items: center;
 }
 
 .nav-header {
