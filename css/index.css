@@ -5,7 +5,11 @@ header {
     border: 5px solid red;
 }
 
-nav
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .nav-header {
     list-style: none;
