@@ -11,7 +11,7 @@ header h1 {
     margin: 0;
 }
 
-header span img{
+header span{
     background-image: url(../img/icono.png);
     background-size: cover;
     background-position: center center;
