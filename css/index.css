@@ -3,7 +3,3 @@ header {
     justify-content: space-between;
 }
 
-nav {
-    display: flex;
-    gap: 20px;
-}
