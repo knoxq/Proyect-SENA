@@ -3,8 +3,10 @@
         "commands": [
             {
                 "match": ".*",
+                "isAsync": false,
                 "cmd": "powershell -ExecutionPolicy Bypass -File \"${workspaceFolder}\\push-auto.ps1\""
             }
         ]
     }
 }
+
