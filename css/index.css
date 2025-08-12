@@ -15,7 +15,7 @@ header h1 {
 }
 
 header div{
-    margin;
+    margin-right: 1em;
     display: flex;
     background-image: url(../img/icono.png);
     background-size: cover;
