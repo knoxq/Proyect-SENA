@@ -41,7 +41,7 @@ nav {
 }
 
 .nav-header a{
-    text-decoration: ;
+    text-decoration: underline;
     text-decoration: none;
     color: #F5E6D3;
 }
