@@ -5,7 +5,7 @@ header {
 
 .nav-header {
     list-style: none;
-    padding: 0;
+    padding: 1em;
     margin: 0;
     display: flex;
 }
