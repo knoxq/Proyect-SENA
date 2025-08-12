@@ -5,6 +5,12 @@ header {
     background-color: #4E342E;
 }
 
+header h1 {
+    color: #F5E6D3;
+    font-size: 2em;
+    margin: 0;
+}
+
 nav {
     display: flex;
     justify-content: center;
