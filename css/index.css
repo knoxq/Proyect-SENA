@@ -12,4 +12,6 @@ header {
     display: flex;
 }
 
-.
+.nav-header li {
+    margin-right: 20px;
+}
