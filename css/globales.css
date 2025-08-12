@@ -29,7 +29,7 @@ button {
     cursor: pointer;
 }
 button:hover {
-    background-color: var(--color-dorado);
+    background-color: var(--color-lima);
 }
 
 a {
