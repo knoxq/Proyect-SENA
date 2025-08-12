@@ -12,6 +12,7 @@ header h1 {
 }
 
 header div{
+    
     background-image: url(../img/icono.png);
     background-size: cover;
     background-position: center center;
