@@ -32,7 +32,7 @@ header {
 /* MENU DESPLEGABLE */
 
 #lista_desplegable ul{
-    list
+    list-style: ;
 }
 
 
