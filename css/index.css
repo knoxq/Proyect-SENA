@@ -109,13 +109,13 @@ header .icon{
     border-radius: 20px;
     padding-right: 3em;
     text-align: center;
-
+    display: flex;
 }
 
 .prin_img1{
     background-image: url(../img/cafe2_index.png);
     background-size: cover;
-    
+
 }
 
 .prin2 h1{
