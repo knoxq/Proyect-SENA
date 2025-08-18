@@ -8,10 +8,6 @@ header {
 /* MENU DESPLEGABLE */
 
 #lista_desplegable {
-    background-image: url(../img/cafe_index.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: none;
     padding: 10px;
 }
 
