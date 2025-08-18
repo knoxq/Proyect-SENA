@@ -63,17 +63,11 @@ header .icon{
     margin: 1em;
     padding: 2em;
     max-width: 900px;
-    
 }
 
 .text_prin{
     width: 100%;
     margin: 1em;
-    
-}
-
-.text_prin h1 {
-    max-width: 500px;
 }
 
 #img_prin{
