@@ -198,5 +198,6 @@ footer {
 }
 
 .icons {
-    flex-direction: column;
+    display: flex;
+    
 }
