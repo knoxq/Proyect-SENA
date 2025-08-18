@@ -58,7 +58,7 @@ header .icon{
 }
 
 .prin {
-    aling
+    align-content: center;
     max-width: 900px;
 
 }
