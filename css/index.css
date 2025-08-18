@@ -49,7 +49,8 @@ header .icon{
 
 #img_prin{
     background-image:linear-gradient(
-        0deg
+        0deg,
+        
     ), url(../img/cafe_index.jpg);
     background-size: cover;
     background-position: center center;
