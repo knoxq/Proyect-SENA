@@ -70,7 +70,8 @@ header .icon{
 }
 
 .prin .text_prin{
-    
+    text-align: center;
+    justify-content: center;
 }
 
 .text_prin{
