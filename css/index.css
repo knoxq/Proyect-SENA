@@ -52,12 +52,13 @@ header .icon{
     margin: 1em;
     color: #F5E6D3;
     background-color: #FAFAFA;
+    justify-content: center;
 
 }
 
 .prin {
     max-width: 900px;
-    
+
 }
 
 
