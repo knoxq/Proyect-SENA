@@ -116,7 +116,8 @@ header .icon{
 .prin_img1{
     background-image: url(../img/cafe2_index.png);
     background-size: cover;
-    width: ;
+    width: 100%;
+    height: ;
 }
 
 .prin2 h1{
