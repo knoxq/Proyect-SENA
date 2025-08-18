@@ -64,7 +64,7 @@ header {
     transition: background 0.3s;
 }
 
-#lista_desplegable 
+#lista_desplegable ul li a:hover
 
 /* MOSTRAR EL MENU CUANDO EL CHECKBOX ESTE ACTIVO */
 
