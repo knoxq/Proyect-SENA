@@ -64,6 +64,7 @@ header .icon{
         rgba(0, 0, 0, 0.3)
     ) url("../img/cafe2_index.png");
     background-size: cover;
+    width: 100%;
     
 }
 
