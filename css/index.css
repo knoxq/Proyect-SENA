@@ -70,6 +70,7 @@ header .icon{
     max-width: 500px;
     align-items: center;
     align-content: center;
+    justify-content: center;
 }
 
 #img_prin{
