@@ -72,6 +72,7 @@ header .icon{
 .text_prin{
     margin: 1em;
     max-width: 500px;
+    text-align: center;
 }
 
 #img_prin{
