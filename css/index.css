@@ -51,7 +51,7 @@ header .icon{
     background-image:linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.1)
-        rgba()
+        rgba(0, 0, )
     ), url(../img/cafe_index.jpg);
     background-size: cover;
     background-position: center center;
