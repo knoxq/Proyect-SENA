@@ -56,7 +56,7 @@ header {
 }
 
 #lista_desplegable ul li a {
-    
+    display: block;
 }
 
 
