@@ -68,11 +68,6 @@ header .icon{
 .text_prin{
     margin: 1em;
     max-width: 500px;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    align-self: center;
-    text-align: center;
 }
 
 #img_prin{
