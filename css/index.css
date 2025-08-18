@@ -116,7 +116,7 @@ header .icon{
     margin-top: 2em;
     background-image: linear-gradient(
         0deg,
-        rgba
+        rgba()
     ) , url("../img/cafe_cont_index.jpg");
     background-size: cover;
     background-position: center center;
