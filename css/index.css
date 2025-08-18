@@ -50,7 +50,7 @@ header .icon{
 #img_prin{
     background-image: url(../img/cafe_index.jpg);
     background-size: cover;
-    bac
+    background-position: center center;
     width: 100%;
     height: 300px;
 }
