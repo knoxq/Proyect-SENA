@@ -55,7 +55,9 @@ header {
     padding: 15px;
 }
 
-#lista_desplegable 
+#lista_desplegable ul li a {
+    
+}
 
 
 header .title {
