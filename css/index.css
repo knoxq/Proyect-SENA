@@ -197,7 +197,9 @@ footer {
     justify-content: space-between;
 }
 
-footer p
+footer p{
+    
+}
 
 .icons {
     display: flex;
