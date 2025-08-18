@@ -61,7 +61,8 @@ header .icon{
 
 .prin {
     background: linear-gradient(
-        0deg
+        0deg,
+        rgba()
     );
     max-width: 900px;
 }
