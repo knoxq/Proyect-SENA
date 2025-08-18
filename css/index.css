@@ -202,7 +202,9 @@ footer {
     align-content: center;
 }
 
-
+.p_footer p{
+    
+}
 
 .icons {
     display: flex;
