@@ -100,7 +100,9 @@ header .icon{
     width: 50px;
 }
 
-
+#navegacion {
+    display: none;
+}
 
 #navegacion {
     display: flex;
