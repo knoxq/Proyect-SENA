@@ -86,7 +86,7 @@ header .icon{
     padding: 1.5em;
     margin: 1em;
     max-width: 600px;
-    background-color: rgba;
+    background-color: rgba(red, green, blue, alpha);
     border-radius: 20px;
     padding-right: 3em;
 }
