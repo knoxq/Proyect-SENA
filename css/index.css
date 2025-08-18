@@ -23,6 +23,10 @@ header div{
     width: 50px;
 }
 
+header nav {
+    justify-content: space-between;
+}
+
 nav {
     display: flex;
     justify-content: center;
