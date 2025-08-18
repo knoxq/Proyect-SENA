@@ -203,7 +203,7 @@ footer {
 }
 
 .p_footer p{
-    align-content: baseline;
+    justify-content: baseline;
 }
 
 .icons {
