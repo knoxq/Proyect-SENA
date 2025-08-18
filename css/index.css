@@ -202,12 +202,6 @@ footer {
     justify-content: baseline;
     align-content: baseline;
 }
-
-.p_footer p{
-    justify-content: baseline;
-    align-content: baseline;
-}
-
 .icons {
     display: flex;
     flex-direction: column;
