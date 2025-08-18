@@ -59,7 +59,8 @@ header .icon{
     display: flex;
     justify-content: space-evenly;
     background-image: linear-gradient(
-        0deg
+        0deg,
+        
     )
 
 }
