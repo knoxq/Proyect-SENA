@@ -67,6 +67,7 @@ header .icon{
     justify-content: center;
     align-content: center;
     align-items: center;
+    align-self: ;
 }
 
 .text_prin{
