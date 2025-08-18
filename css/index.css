@@ -61,7 +61,7 @@ header .icon{
 
 .prin {
     display: flex;
-    flex: ;
+    flex-direction: column;
     margin: 1em;
     padding: 2em;
     max-width: 900px;
