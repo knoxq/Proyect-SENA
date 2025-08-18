@@ -67,7 +67,7 @@ header {
 }
 
 #lista_desplegable ul li a:hover {
-    background: #4E342E;
+    background: rgb(78 52 46);
 }
 
 /* MOSTRAR EL MENU CUANDO EL CHECKBOX ESTE ACTIVO */
