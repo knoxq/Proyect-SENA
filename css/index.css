@@ -50,7 +50,8 @@ header {
 .menu_cerr{
     align-self: flex-end;
     cursor: pointer;
-    font
+    font-size: 22px;
+    color: ;
 }
 
 
