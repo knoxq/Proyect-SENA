@@ -193,5 +193,5 @@ header .icon{
 }
 
 footer {
-    
+    display: flex;
 }
