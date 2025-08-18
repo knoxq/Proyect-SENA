@@ -61,7 +61,7 @@ header .icon{
 .prin {
     border: 5px solid black;
     max-width: 900px;
-    justify-content: center;
+    justify-content: space-;
 }
 
 #img_prin{
