@@ -9,7 +9,7 @@ header {
 
 #lista_desplegable {
     background-image: url("../img/cafe_index.png");
-    back
+    background-size: cover;
     padding: 10px;
 }
 
