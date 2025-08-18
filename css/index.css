@@ -89,7 +89,7 @@ header .icon{
     background-color: #FAFAFA;
     background: linear-gradient(
         0deg,
-        rg
+        rgba(0, 0, 0, 0.1)
     );
     border-radius: 20px;
     padding-right: 3em;
