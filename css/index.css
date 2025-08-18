@@ -25,7 +25,7 @@ header div{
 
 nav {
     display: flex;
-    justify-content: ;
+    justify-content: end;
     align-items: center;
 }
 
