@@ -5,7 +5,7 @@ header {
     background-color: #4E342E;
 }
 
-header h1 {
+header .Title {
     display: flex;
     color: #F5E6D3;
     font-size: 2em;
