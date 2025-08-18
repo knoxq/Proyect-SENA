@@ -66,8 +66,8 @@ header .icon{
 }
 
 .text_prin{
-    width: 100%;
     margin: 1em;
+    max-width: 500px;
 }
 
 #img_prin{
