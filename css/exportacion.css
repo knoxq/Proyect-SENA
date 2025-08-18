@@ -1,0 +1,118 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    background-color: #4E342E;
+}
+
+/* MENU DESPLEGABLE */
+
+#lista_desplegable {
+    background: #4E342E;
+    padding: 10px;
+}
+
+/*  BOTON PARA ABRIR EL MENU */
+
+.menu_act {
+    cursor: pointer;
+    font-size: 20px;
+    color: #F5E6D3;
+    background: none;
+    border: none;
+    padding: 10px;
+}
+
+/*  BOTON OCULTO */
+
+#menu {
+    display: none;
+}
+
+/* MENU DESPLEGABLE */
+
+#lista_desplegable ul{
+    list-style: none;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #4E342E;
+    display: flex;
+    flex-direction: column;
+    transition: left 0.3s ease;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.3);
+}
+
+/* BOTON DE CERRAR */
+
+.menu_cerr{
+    align-self: flex-end;
+    cursor: pointer;
+    font-size: 22px;
+    color: #F5E6D3;
+    padding: 15px;
+}
+
+#lista_desplegable ul li a {
+    display: block;
+    padding: 15px;
+    color: #F5E6D3;
+    text-decoration: none;
+    border-bottom: 1px solid #F5E6D3;
+    transition: background 0.3s;
+}
+
+#lista_desplegable ul li a:hover {
+    background: #4E342E;
+}
+
+/* MOSTRAR EL MENU CUANDO EL CHECKBOX ESTE ACTIVO */
+
+#menu:checked ~ ul {
+    left: 0;
+}
+
+
+header .title {
+    display: flex;
+    color: #F5E6D3;
+    font-size: 2em;
+    margin: 0;
+    margin-left: 1em;
+    text-decoration:underline;
+}
+
+header .icon{
+    margin-right: 15px;
+    display: flex;
+    background-image: url(../img/icono.png);
+    background-size: cover;
+    background-position: center center;
+    height: 50px;
+    width: 50px;
+}
+
+#navegacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-header {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-header li {
+    margin-right: 20px;
+    justify-content: baseline;
+}
+
+.nav-header a{
+    text-decoration: none;
+    color: #F5E6D3;
+}
