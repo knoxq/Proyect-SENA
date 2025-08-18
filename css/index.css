@@ -59,7 +59,7 @@ header .icon{
 
 .prin {
     text-align: center;
-    justify-content: spa;
+    justify-content: space-evenly;
     max-width: 900px;
 }
 
