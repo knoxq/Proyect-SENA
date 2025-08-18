@@ -201,8 +201,7 @@ footer {
 }
 
 .p_footer{
-    justify-content: baseline;
-
+    justify-content: center;
 }
 
 .p_footer p {
