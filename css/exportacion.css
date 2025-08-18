@@ -89,7 +89,7 @@ header .title {
     text-decoration:underline;
     position: absolute;
     left: 50%;
-    transform: ;
+    transform: trans;
 }
 
 header .icon{
