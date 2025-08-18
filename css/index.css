@@ -58,7 +58,7 @@ header .icon{
 #cont_prin{
     display: flex;
     justify-content: space-evenly;
-    background-image: url(../);
+    background-image: url(../img/);
 }
 
 .prin1{
