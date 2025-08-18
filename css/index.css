@@ -64,7 +64,7 @@ header {
     transition: background 0.3s;
 }
 
-#menu:checked ~
+#menu:checked ~ ul
 
 
 header .title {
