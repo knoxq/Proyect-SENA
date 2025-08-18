@@ -41,7 +41,7 @@ header {
     flex-direction: column;
     transition: left 0.3s ease;
     box-shadow: 2px 0 8px rgba(0, 0, 0, 0.3);
-    background-image: url(../img/cafe_index.jpg);
+    background-image:, url(../img/cafe_index.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: none;
