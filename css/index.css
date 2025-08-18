@@ -58,8 +58,9 @@ header .icon{
 #cont_prin{
     display: flex;
     justify-content: space-evenly;
-    background-image: url(../img/cafe2_index.png);
-    
+    background-image:
+     url(../img/cafe2_index.png);
+
 }
 
 .prin1{
