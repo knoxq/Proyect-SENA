@@ -63,6 +63,7 @@ header .icon{
     margin: 1em;
     padding: 2em;
     max-width: 900px;
+    text-align: center;
     justify-content: center;
 }
 
