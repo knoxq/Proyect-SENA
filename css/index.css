@@ -205,7 +205,9 @@ footer {
     align-content: baseline;
 }
 
-.p
+.p_footer p {
+    
+}
 
 .icons {
     display: flex;
