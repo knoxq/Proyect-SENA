@@ -63,6 +63,7 @@ header {
     border: 1px solid #F5E6D3;
     transition: background 0.3s;
 }
+
 /* MOSTRAR EL MENU CUANDO EL CHECKBOX ESTE ACTIVO */
 
 #menu:checked ~ ul {
