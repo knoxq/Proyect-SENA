@@ -110,3 +110,11 @@ header .icon{
     padding-right: 3em;
     text-align: center;
 }
+
+.prin1 h1{
+    margin: 1em 0;
+}
+
+.prin1 p{
+    max-width: 300px;
+}
