@@ -58,11 +58,7 @@ header .icon{
 #cont_prin{
     display: flex;
     justify-content: space-evenly;
-    background-image: linear-gradient(
-    0deg,
-    rbga(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.3)
-    ), url("../img/cafe2_index.png");
+    background-image: linear-gradient()
 
 }
 
