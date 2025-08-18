@@ -10,7 +10,7 @@ header {
 #lista_desplegable {
     background-image: url(../img/cafe_index.png);
     background-size: cover;
-    bakc
+    background-position: center center;
     padding: 10px;
 }
 
