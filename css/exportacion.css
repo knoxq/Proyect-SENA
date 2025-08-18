@@ -71,7 +71,7 @@ header {
 }
 
 #lista_desplegable ul li a:hover {
-    background: rgba(78, 52, 46, 0.1);
+    background: rgba(78, 52, 46, 0.7);
 }
 
 /* MOSTRAR EL MENU CUANDO EL CHECKBOX ESTE ACTIVO */
