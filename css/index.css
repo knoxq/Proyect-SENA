@@ -41,7 +41,7 @@ header {
     background: #4E342E;
     display: flex;
     flex-direction: column;
-    transition: left 0;
+    transition: left 0.3s ease;
 }
 
 
