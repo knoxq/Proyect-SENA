@@ -42,6 +42,7 @@ header {
     display: flex;
     flex-direction: column;
     transition: left 0.3s ease;
+    box-shadow: ;
 }
 
 
