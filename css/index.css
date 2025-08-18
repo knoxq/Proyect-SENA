@@ -42,7 +42,7 @@ header {
     display: flex;
     flex-direction: column;
     transition: left 0.3s ease;
-    box-shadow: 2px 0 8px rgb;
+    box-shadow: 2px 0 8px rgba();
 }
 
 
