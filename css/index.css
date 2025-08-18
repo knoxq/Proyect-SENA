@@ -197,7 +197,7 @@ footer {
     display: flex;
     justify-content: space-between;
     background: #4E342E;
-    flex-direction: ;
+    flex-direction: row-reverse;
 }
 
 .p_footer{
