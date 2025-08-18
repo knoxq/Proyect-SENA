@@ -57,7 +57,7 @@ header .icon{
 
 #cont_prin{
     display: flex;
-    
+    justify-content: space-between;
 }
 
 .prin1{
