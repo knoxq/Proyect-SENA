@@ -87,11 +87,6 @@ header .icon{
     margin: 1em;
     max-width: 600px;
     background-color: #FAFAFA;
-    background: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.6),
-        rgba(0, 0, 0, 0, 0.6)
-    );
     border-radius: 20px;
     padding-right: 3em;
 }
