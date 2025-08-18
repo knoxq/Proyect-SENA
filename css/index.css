@@ -24,7 +24,7 @@ header div{
     width: 50px;
 }
 
-nav  {
+nav #navegacion {
     display: flex;
     justify-content: center;
     align-items: center;
