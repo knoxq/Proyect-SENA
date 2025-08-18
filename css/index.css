@@ -194,5 +194,5 @@ header .icon{
 
 footer {
     display: flex;
-    spa
+    justify-content: spa;
 }
