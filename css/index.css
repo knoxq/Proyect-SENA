@@ -56,5 +56,5 @@ header .icon{
 }
 
 #cont_prin{
-    
+    display: flex;
 }
