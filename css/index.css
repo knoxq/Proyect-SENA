@@ -47,12 +47,6 @@ header .icon{
     color: #F5E6D3;
 }
 
-.prin {
-    border: 5px solid black;
-    max-width: 900px;
-    justify-content: center;
-}
-
 #cont_principal {
     display: flex;
     padding: 2em;
@@ -64,7 +58,11 @@ header .icon{
     text-align: center;
 }
 
-
+.prin {
+    border: 5px solid black;
+    max-width: 900px;
+    justify-content: center;
+}
 
 #img_prin{
     background-image:linear-gradient(
