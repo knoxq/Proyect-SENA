@@ -59,7 +59,7 @@ header .icon{
     display: flex;
     justify-content: space-evenly;
     background-image: linear-gradient(
-
+    
     ), url(../img/cafe2_index.png);
 
 }
