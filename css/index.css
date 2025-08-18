@@ -63,7 +63,7 @@ header {
     border: 1px solid #F5E6D3;
     transition: background 0.3s;
 }
-
+/*  */
 
 #menu:checked ~ ul {
     left: 0;
