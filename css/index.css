@@ -205,7 +205,7 @@ footer {
     display: flex;
     justify-content: baseline;
     align-items: baseline;
-    align-content: ;
+    align-content: baseline;
 }
 
 .p_footer p {
