@@ -118,6 +118,9 @@ header .icon{
 .tableG {
     justify-content: center;
     align-content: center;
+    align-items: center;
+    text-align: center;
+    align-self: ;
 }
 
 .tableG table{
