@@ -32,7 +32,7 @@ body {
 
 .add {
     justify-content: space-between;
-    text-align: ;
+    text-align: left;
     align-items: center;
     display: flex;
 }
