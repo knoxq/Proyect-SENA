@@ -72,12 +72,6 @@ body {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-
-.add option {
-    padding: 10px;
-    font-size: 1em;
-}
-
 .button {
     display: flex;
     justify-content: center;
