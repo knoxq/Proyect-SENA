@@ -26,6 +26,7 @@
 }
 
 .add label {
+    
     flex-direction: column;
     margin: 1em;
     margin-top: 0;
