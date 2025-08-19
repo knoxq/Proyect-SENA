@@ -45,7 +45,7 @@
     color: #3e2723;
     outline: none;
     appearance: none;
-    webkit-ap
+    -webkit-appearance: ;
 }
 
 .add select {
