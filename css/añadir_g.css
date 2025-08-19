@@ -68,3 +68,8 @@
     border-color: #3e2723;
     box-shadow: 0 0 6px rgba(94,53,44,0.6);
 }
+
+.add option {
+  padding: 10px;
+  font-size: 1em;
+}
