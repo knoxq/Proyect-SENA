@@ -70,7 +70,8 @@ body {
 }
 
 .form-recuperacion button a {
-  
+  text-decoration: none;
+  color: #4E342E;
 }
 
 @media (max-width: 991px) {
