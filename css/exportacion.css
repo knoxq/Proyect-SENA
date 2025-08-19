@@ -131,7 +131,7 @@ header .icon{
     text-align: center;
 }
 
-.buttons button {
+#buttons button {
     margin: 1em;
     padding: 1em;
     border: none;
