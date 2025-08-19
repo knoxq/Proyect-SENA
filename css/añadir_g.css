@@ -46,7 +46,8 @@
     outline: none;
     appearance: none;
     -webkit-appearance: none;
-    -moz-appearance: ;
+    -moz-appearance: none;
+    cursor: ;
 }
 
 .add select {
