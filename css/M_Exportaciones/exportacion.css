@@ -100,6 +100,20 @@ header .icon{
     width: 50px;
 }
 
+.nav-header ul{
+    align-content: center;
+}
+
+.nav-header li {
+    margin-right: 20px;
+    justify-content: baseline;
+}
+
+.nav-header a{
+    text-decoration: none;
+    color: #F5E6D3;
+}
+
 #gestion_lotes {
     display: flex;
     flex-direction: column;
