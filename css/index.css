@@ -198,6 +198,7 @@ footer {
     background: #4E342E;
     flex-direction: row-reverse;
     padding: 2em;
+    align-items: baseline;
 }
 
 .p_footer{
