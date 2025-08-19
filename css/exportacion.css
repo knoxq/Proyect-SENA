@@ -111,4 +111,6 @@ header .icon{
     border: 5px solid black;
 }
 
-.formG th td
+.formG th td {
+    border: ;
+}
