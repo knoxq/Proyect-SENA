@@ -100,6 +100,10 @@
     background-color: #FFF;
 }
 
+.button button:hover{
+    
+}
+
 .button a{
     text-decoration: none;
     color: #3e2723;
