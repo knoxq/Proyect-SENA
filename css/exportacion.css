@@ -184,6 +184,7 @@ header .icon{
     border-collapse: collapse;
     width: 60%;
     margin: 1em auto;
+    text-align: center;
 }
 
 .tableR th, td{
