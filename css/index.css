@@ -208,7 +208,7 @@ footer {
 .p_footer p {
     display: flex;
     flex-direction: column;
-    
+    justify-content: baseline;
     font-size: 10px;
 }
 
