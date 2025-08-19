@@ -207,7 +207,7 @@ footer {
 
 .p_footer p {
     display: flex;
-    
+    flex-direction: ;
     font-size: 10px;
 }
 
