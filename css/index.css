@@ -202,7 +202,7 @@ footer {
 }
 
 .p_footer{
-    display: ;
+    display: flex;
     justify-content: baseline;
 }
 
