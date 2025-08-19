@@ -1,7 +1,8 @@
 body {
     background-image: url(../img/cafe_index.jpg);
     background-size: cover;
-    background-position: ;
+    background-position: center center;
+    
 }
 
 #add {
