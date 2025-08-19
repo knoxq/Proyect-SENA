@@ -45,6 +45,7 @@
 .add input {
     width: 100%;
     max-width: 300px;
+    padding: 12;
 }
 
 .add select {
