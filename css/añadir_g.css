@@ -50,9 +50,9 @@
     border: 2px solid #5d4037;
     border-radius: 30px;   /* borde redondeado como en tu imagen */
     background-color: #fff;
-  color: #3e2723;
-  outline: none;
-  appearance: none;   /* quita el estilo por defecto del navegador */
+    color: #3e2723;
+    outline: none;
+    appearance: none;   /* quita el estilo por defecto del navegador */
   -webkit-appearance: none;
   -moz-appearance: none;
   cursor: pointer;
