@@ -108,7 +108,7 @@ header .icon{
 }
 
 .formG table{
-    border
+    border-collapse: collapse;
 }
 
 .formG tr th td {
