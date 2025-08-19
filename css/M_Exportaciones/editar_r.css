@@ -13,7 +13,6 @@ body {
     align-items: center;
     background: transparent;
     display: flex;
-    flex-direction: column;
     height: 100vh;
 }
 
