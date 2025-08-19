@@ -122,7 +122,7 @@ header .icon{
 }
 
 .tableG th, td {
-    border: 5px solid black;
+    border: 5px solid ;
     padding: 1em;
     text-align: left;
 }
