@@ -88,9 +88,6 @@ header .title {
     margin: 0;
     margin-left: 1em;
     text-decoration:underline;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
 }
 
 header .icon{
