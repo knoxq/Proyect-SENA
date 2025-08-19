@@ -88,5 +88,6 @@
 }
 
 .button {
+    display: flex;
     
 }
