@@ -128,5 +128,6 @@ header .icon{
 
 .tableG th, td {
     border: 5px solid black;
+    padding: 1em;
     text-align: left;
 }
