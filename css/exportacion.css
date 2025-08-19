@@ -116,14 +116,13 @@ header .icon{
 }
 
 .tableG {
-    
+
 }
 
 .tableG table{
     border-collapse: collapse;
     width: 40%;
     margin: 1em;
-    margin-left: 2em;
 }
 
 .tableG th, td {
