@@ -111,6 +111,7 @@ header .icon{
     border-collapse: collapse;
     width: 60%;
     margin: 1em;
+    padding: 1em;
 }
 
 .formG th, td {
