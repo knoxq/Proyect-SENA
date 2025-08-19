@@ -122,9 +122,6 @@ header .icon{
     margin: 1em;
     margin-left: 2em;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    align-self: center;
 }
 
 .formG th, td {
