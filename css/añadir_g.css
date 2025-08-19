@@ -33,7 +33,9 @@
     font-size: 1.5em;
 }
 
-.add input, 
+.add input, select {
+    margin: ;
+}
 
 .add input {
     width: 100%;
