@@ -43,7 +43,7 @@ body {
     margin-top: 0;
     font-size: 1.5em;
     border-bottom: 5px solid #3e2723;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .add input, select {
