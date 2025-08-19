@@ -123,7 +123,7 @@ header .icon{
     margin-left: 2em;
     justify-content: center;
     align-items: center;
-    
+    text-align: center;
 }
 
 .formG th, td {
