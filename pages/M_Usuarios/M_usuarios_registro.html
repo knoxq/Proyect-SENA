@@ -5,9 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/globales.css">
     <link rel="stylesheet" href="../../css/usuarios_registro.css">
-    <title>Document</title>
+    <title>Registro</title>
 </head>
 <body>
-    
+    <section class="registro-container">
+        <form class="form-registro">
+            <h2>CREACIÓN USUARIO</h2>
+
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+      
+            <label for="documento">Documento de identidad</label>
+            <input type="text" id="documento" name="documento" placeholder="Número de documento" required>
+
+            <label for="usuario">Email</label>
+            <input type="text" id="email" name="email" placeholder="Escribe tu email" required>
+
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" placeholder="********" required>
+
+            <label for="rol">Rol</label>
+            <select id="rol" name="rol" required>
+                <option value="">Selecciona un rol</option>
+                <option value="admin">Administrador</option>
+                <option value="cafetero">Cafetero</option>
+                <option value="tecnico">Técnico</option>
+            </select>
+      
+            <button type="submit">Registrar</button>    
+        </form>
+    </section>
 </body>
-</html>
+</html> 
