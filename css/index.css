@@ -209,6 +209,7 @@ footer {
     display: flex;
     justify-content: baseline;
     align-content: baseline;
+    align-items: baseline;
     font-size: 10px;
 }
 
