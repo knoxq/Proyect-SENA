@@ -103,7 +103,7 @@ header .icon{
 }
 
 #gestion_lotes {
-    
+    display: flex;
     justify-content: center;
     align-content: center;
 }
