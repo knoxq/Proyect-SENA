@@ -127,7 +127,7 @@ header .icon{
     text-align: left;
 }
 
-.buttons {
+#buttons {
     text-align: center;
 }
 
@@ -143,5 +143,5 @@ header .icon{
 }
 
 .buttons .b1{
-    
+
 }
