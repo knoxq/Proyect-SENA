@@ -48,7 +48,7 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     cursor: pointer;
-    
+    box-shadow: ;
 }
 
 .add select {
