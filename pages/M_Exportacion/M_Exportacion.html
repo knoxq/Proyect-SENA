@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/globales.css">
+    <link rel="stylesheet" href="../../css/M_Exportaciones/exportacion.css">
+    <title> CoffeeTivApp Reportes </title>
+</head>
+<body>
+    <header>
+        <nav id="lista_desplegable">
+            <!-- BOTONES PARA ACTIVAR -->
+            <input type="checkbox" id="menu">
+            <label for="menu" class="menu_act"> ☰ Menú </label>
+
+            <!-- CONTENIDO MENU -->
+            <ul>
+                <!-- BOTON PARA CERRAR -->
+                <label for="menu" class="menu_cerr"> ✖ </label>
+
+                <!-- NAVEGACION  -->
+                <li><a href="../M_Cafeteros.html">Cafeteros</a></li>
+                <li><a href="../M_Compras.html">Compras</a></li>
+                <li><a href="../M_controlCalidad.html">Control de Calidad</a></li>
+                <li><a href="../M_Exportacion/M_Exportacion.html">Exportaciones</a></li>
+                <li><a href="../M_Reportes.html">Reportes</a></li>
+            </ul>
+        </nav>
+
+        <!-- TITULO  -->
+        <h1 class="title"><div class="icon"></div>CoffeeTivApp</h1>
+    </header>
+
+    <section id="gestion_lotes">
+        <div class="titleG">
+            <h1> Gestion de Lotes</h1>
+        </div>
+        <div class="tableG">
+            <table>
+                <tr>
+                    <th> ID del Lote </th>
+                    <th> ¿Listo para exportacion? </th>
+                </tr>
+                <tr>
+                    <td> Lote - S#01 </td>
+                    <td> No  listo para exportacion </td>
+                </tr>
+                <tr>
+                    <td> Lote - N#02 </td>
+                    <td> Listo para exportacion </td>
+                </tr>
+            </table>
+            <div id="buttons">
+                <button class="b1"><a href="añadir_g.html">AÑADIR</a></button>
+                <button class="b2"><a href="eliminar_g.html">ELIMINAR</a></button>
+                <button class="b3"><a href="editar_g.html">EDITAR</a></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="registros">
+        <div class="titleR">
+            <h1> Registros </h1>
+        </div>
+        <div class="tableR">
+            <table>
+                <tr>
+                    <th> Lote Cafe</th>
+                    <th> Pais de Destino</th>
+                    <th> Origen del Cafe</th>
+                    <th> Cantidad Exportada en Toneladas </th>
+                    <th> Precio de Venta </th>
+                </tr>
+                <tr>
+                    <td> S#01 </td>
+                    <td> Argentina </td>
+                    <td> Colombia </td>
+                    <td> 9 </td>
+                    <td> 200 millones </td>
+                </tr>
+            </table>
+            <div id="buttons">
+                <button class="b1"><a href="añadir_r.html">AÑADIR</a></button>
+                <button class="b2"><a href="eliminar_r.html">ELIMINAR</a></button>
+                <button class="b3"><a href="editar_r.html">EDITAR</a></button>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

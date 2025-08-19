@@ -1,0 +1,106 @@
+body {
+    background-image: url(../../img/cafe_index.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+}
+
+#add {
+    margin: 1em auto;
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.content{
+    color: #5d4037;
+    padding: 2em;
+    background-color: #F5E6D3;
+    border-radius: 30px;
+}
+
+.title {
+    margin: 1em;
+    font-size: 2em;
+}
+
+
+.add {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.add label {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.add select {
+    margin: 1em;
+    margin-top: 0;
+}
+
+.add select {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px 15px;
+    font-size: 1em;
+    border: 2px solid #5d4037;
+    border-radius: 30px;   /* borde redondeado como en tu imagen */
+    background-color: #fff;
+    color: #3e2723;
+    outline: none;
+    appearance: none;   /* quita el estilo por defecto del navegador */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.add select:hover{ 
+    border-color: #4e342e;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.add select:focus {
+    border-color: #3e2723;
+    box-shadow: 0 0 6px rgba(94,53,44,0.6);
+}
+
+.add option {
+    padding: 10px;
+    font-size: 1em;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+
+.button button{
+    padding: 1em;
+    border: 2px solid #5d4037;
+    border-radius: 30px;
+    background-color: #FFF;
+}
+
+.button button:hover{
+    border-color: #4e342e;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.button a{
+    text-decoration: none;
+    color: #3e2723;
+}
