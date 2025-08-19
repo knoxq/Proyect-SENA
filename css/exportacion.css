@@ -116,12 +116,12 @@ header .icon{
 }
 
 .tableG {
-    transform: translate(20%);
+    transform: translate(0%);
 }
 
 .tableG table{
     border-collapse: collapse;
-
+    width: 60%;
     margin: 1em;
     margin-left: 2em;
     
