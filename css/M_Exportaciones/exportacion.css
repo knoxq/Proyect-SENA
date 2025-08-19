@@ -101,6 +101,13 @@ header .icon{
     width: 50px;
 }
 
+.nav-header {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
 .nav-header ul{
     align-content: center;
 }
