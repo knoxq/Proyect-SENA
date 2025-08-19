@@ -63,3 +63,8 @@
     border-color: #4e342e;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
+
+.add select:focus {
+  border-color: #3e2723;
+  box-shadow: 0 0 6px rgba(94,53,44,0.6);
+}
