@@ -33,20 +33,12 @@
     font-size: 1.5em;
 }
 
-.add input, select {
-    margin: 1em;
-    margin-top: 0;
-    max-width: 300px;
-    font-size: 1.2em;
-    border: none;
-
-}
 
 .add input {
     width: 100%;
     max-width: 300px;
     padding: 12px 15px;
-    
+
 }
 
 .add select {
