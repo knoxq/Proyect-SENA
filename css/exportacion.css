@@ -151,3 +151,11 @@ header .icon{
         #91f16b
     );
 }
+
+#buttons .b1{
+    background: linear-gradient(
+        90deg,
+        #9fc88e,
+        #91f16b
+    );
+}
