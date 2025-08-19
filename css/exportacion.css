@@ -111,6 +111,6 @@ header .icon{
     border-collapse: collapse;
 }
 
-.formG tr td {
+.formG th td {
     border: 5px solid black;
 }
