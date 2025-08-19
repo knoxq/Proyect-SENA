@@ -186,5 +186,7 @@ header .icon{
 }
 
 .tableR {
-    
+    border: 5px solid #4E342E;
+    padding: 1em;
+    text-align: left;
 }
