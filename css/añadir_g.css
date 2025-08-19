@@ -5,5 +5,5 @@
     justify-content: center;
     background: #F5F5F5;
     display: flex;
-    
+    flex-direction: column;
 }
