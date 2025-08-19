@@ -201,7 +201,8 @@ footer {
 }
 
 .p_footer{
-    display: ;
+    display: flex;
+    
 }
 
 .p_footer p {
