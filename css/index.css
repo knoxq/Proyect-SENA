@@ -229,7 +229,9 @@ footer {
         padding: 1em;
     }
 
-    .ti
+    .title {
+        
+    }
 
     .nav-header {
         flex-direction: column;
