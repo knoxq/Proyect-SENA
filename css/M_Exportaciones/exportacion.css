@@ -214,6 +214,8 @@ header .icon{
     text-align: center;
 }
 
+/* tablet */
+
 @media (max-width: 1024px) {
     .tableG table, .tableR table {
         width: 80%;
