@@ -214,57 +214,76 @@ header .icon{
     text-align: center;
 }
 
-/* tablet */
-
+/* Tablets */
 @media (max-width: 1024px) {
     .tableG table, .tableR table {
-        width: 80%;
+        width: 90%;
     }
 }
 
 /* Celulares */
 @media (max-width: 768px) {
+    /* Menú apilado */
     .nav-header {
         flex-direction: column;
-        text-align: center;
+        align-items: center;
+        gap: 10px;
     }
 
     .nav-header li {
-        margin: 10px 0;
+        margin: 5px 0;
     }
 
+    /* Tablas con scroll */
     .tableG, .tableR {
+        width: 100%;
         overflow-x: auto;
     }
 
     .tableG table, .tableR table {
         width: 100%;
-        min-width: 500px;
+        min-width: 450px;
+        font-size: 0.9em;
     }
 
+    /* Botones apilados */
     #buttons {
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 10px;
     }
 
     #buttons button {
-        width: 80%;
+        width: 90%;
+        padding: 0.9em;
+        font-size: 1em;
     }
 }
 
 /* Celulares pequeños */
 @media (max-width: 480px) {
+    /* Títulos más compactos */
     .titleG, .titleR {
-        font-size: 1.2em;
+        font-size: 1.1em;
+        margin: 0.5em;
     }
 
+    /* Tablas más legibles */
     .tableG table, .tableR table {
-        font-size: 0.9em;
+        font-size: 0.8em;
+        min-width: 400px;
     }
 
+    .tableG th, .tableG td,
+    .tableR th, .tableR td {
+        padding: 0.5em;
+    }
+
+    /* Botones cómodos */
     #buttons button {
-        font-size: 0.9em;
-        padding: 0.8em;
+        font-size: 0.85em;
+        padding: 0.7em;
+        border-radius: 10px;
     }
 }
