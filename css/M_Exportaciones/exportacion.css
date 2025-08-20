@@ -244,6 +244,6 @@ header .icon{
 
 @media (max-width: 1000px) {
     .cer_move {
-        
+        display: none;
     }
 }
