@@ -241,7 +241,9 @@ header .icon{
         max-width: 200px;
     }
 
-    .
+    .respon_t{
+        display: none;
+    }
 }
 
 @media (max-width: 1000px) {
