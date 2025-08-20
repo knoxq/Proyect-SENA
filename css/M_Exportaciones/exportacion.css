@@ -213,3 +213,56 @@ header .icon{
     text-align: left;
     text-align: center;
 }
+
+@media (max-width: 1024px) {
+    .tableG table, .tableR table {
+        width: 80%;
+    }
+}
+
+/* Celulares */
+@media (max-width: 768px) {
+    .nav-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-header li {
+        margin: 10px 0;
+    }
+
+    .tableG, .tableR {
+        overflow-x: auto;
+    }
+
+    .tableG table, .tableR table {
+        width: 100%;
+        min-width: 500px;
+    }
+
+    #buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #buttons button {
+        width: 80%;
+    }
+}
+
+/* Celulares pequeños */
+@media (max-width: 480px) {
+    .titleG, .titleR {
+        font-size: 1.2em;
+    }
+
+    .tableG table, .tableR table {
+        font-size: 0.9em;
+    }
+
+    #buttons button {
+        font-size: 0.9em;
+        padding: 0.8em;
+    }
+}
