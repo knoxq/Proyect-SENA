@@ -247,5 +247,7 @@ header .icon{
         display: none;
     }
 
-    .men_
+    .men_move {
+        display: none;
+    }
 }
