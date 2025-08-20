@@ -245,7 +245,7 @@ header .icon{
 @media (max-width: 1000px) {
 
     #lista_desplegable {
-        
+        padding: 0;
     }
 
     .cerr_move {
