@@ -254,6 +254,6 @@ header .icon{
     .li_move {
         display: flex;
         margin: auto 0;
-        margin-bottom: ;
+        margin-bottom: 0;
     }
 }
