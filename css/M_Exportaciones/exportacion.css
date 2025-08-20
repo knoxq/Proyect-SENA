@@ -248,7 +248,9 @@ header .icon{
         padding: 0;
     }
 
-    .title
+    .title{
+        
+    }
 
     .cerr_move {
         display: none;
