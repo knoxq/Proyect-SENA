@@ -290,3 +290,21 @@ header .icon{
         padding-top: 140px; /* Ajusta según altura real del header */
     }
 }
+
+/* Tablas responsive SOLO para celulares */
+@media (max-width: 768px) {
+    .tableG, .tableR {
+        width: 100%;
+        overflow-x: auto;   /* Scroll horizontal SOLO dentro de la tabla */
+    }
+
+    .tableG table, .tableR table {
+        width: 600px; /* ancho mínimo de la tabla para que no se aplaste demasiado */
+    }
+
+    .tableG th, .tableR th,
+    .tableG td, .tableR td {
+        font-size: 0.85em; /* texto un poco más pequeño */
+        padding: 8px;
+    }
+}
