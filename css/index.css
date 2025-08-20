@@ -218,6 +218,8 @@ footer {
     margin: 0.5em;
 }
 
+
+
 @media (max-width: 600px) {
     header {
         flex-direction: column;
