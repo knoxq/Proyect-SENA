@@ -253,6 +253,6 @@ header .icon{
 
     .li_move {
         display: flex;
-        justify-content: baseline;
+        text-align: ;
     }
 }
