@@ -266,8 +266,4 @@ header .icon{
         display: flex;
         border-bottom: none;
     }
-
-    .nav-header .li_move a{
-        color: #f16b6b;
-    }
 }
