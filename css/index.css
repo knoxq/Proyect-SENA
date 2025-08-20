@@ -229,12 +229,6 @@ footer {
         padding: 1em;
     }
 
-    .title {
-        margin-left: 0;
-        text-align: left;
-        justify-content: left;
-        align-content: left;
-    }
 
     .nav-header {
         flex-direction: column;
