@@ -267,7 +267,7 @@ header .icon{
         border-bottom: none;
     }
 
-    ..li_move a{
+    .nav.li_move a{
         color: #f16b6b;
     }
 }
