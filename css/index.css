@@ -219,11 +219,14 @@ footer {
 }
 
 @media (max-width: 600px) {
+@media (max-width: 600px) {
+    /* Header */
     header {
         flex-direction: column;
         align-items: center;
         text-align: center;
         gap: 1em;
+        padding: 1em;
     }
 
     .nav-header {
@@ -231,26 +234,49 @@ footer {
         gap: 0.8em;
     }
 
+    .nav-header a {
+        font-size: 1rem;
+    }
+
+    /* Hero principal */
     #img_prin {
-        font-size: 2rem;
-        height: 40vh;
-        padding: 0 1em;
+        font-size: clamp(1.8rem, 6vw, 2.5rem); /* Ajuste dinámico */
+        height: auto;
+        min-height: 35vh;
+        padding: 2em 1em;
         display: flex;
         align-items: center;
         justify-content: center;
+        line-height: 1.2;
     }
 
+    /* Sección principal */
     #cont_principal {
         flex-direction: column;
-        padding: 1.5em;
+        padding: 1em;
+        text-align: center;
     }
 
+    .text_prin {
+        font-size: clamp(1.2rem, 5vw, 1.8rem);
+        margin: 1em 0;
+    }
+
+    .p_prin {
+        font-size: 1rem;
+        line-height: 1.5;
+        padding: 0 1em;
+    }
+
+    /* Sección secundaria */
     #cont_prin {
         flex-direction: column;
         align-items: center;
         padding: 2em 1em;
-        height: auto;
-        gap: 1.5em;
+        height: auto; /* quitamos altura fija */
+        gap: 2em;
+        background-size: cover;
+        background-position: center;
     }
 
     .prin1, .prin2 {
@@ -261,20 +287,33 @@ footer {
     }
 
     .prin_img1, .prin_img2 {
-        height: 180px;
+        height: 200px;
         width: 100%;
+        border-radius: 12px;
     }
 
+    /* Footer */
     footer {
         flex-direction: column;
         align-items: center;
         text-align: center;
         gap: 1.5em;
+        padding: 1.5em 1em;
+    }
+
+    .p_footer p {
+        font-size: 0.8rem;
     }
 
     .icons {
         flex-direction: row;
-        gap: 1.2em;
+        gap: 1.5em;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .icons i {
+        font-size: 1.2rem;
     }
 }
 
