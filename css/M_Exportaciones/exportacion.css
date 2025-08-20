@@ -148,7 +148,9 @@ header .icon{
     text-align: center;
 }
 
-
+.li_move{
+    display: none;
+}
 
 .respon_t {
     display: none;
