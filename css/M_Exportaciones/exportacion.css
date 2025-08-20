@@ -261,7 +261,7 @@ header .icon{
     }
 
     .li_move {
-        margin-bottom: ;
+        margin-bottom: 2em;
         display: flex;
         border-bottom: none;
     }
