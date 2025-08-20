@@ -243,6 +243,8 @@ header .icon{
 }
 
 @media (max-width: 1000px) {
+
+    
     .cerr_move {
         display: none;
     }
