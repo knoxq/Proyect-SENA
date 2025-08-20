@@ -242,7 +242,7 @@ header .icon{
     }
 }
 
-@media (mmin-width: 1000px) {
+@media (min-width: 1000px) {
     .cer_move {
         display: none;
     }
