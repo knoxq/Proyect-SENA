@@ -277,7 +277,7 @@ header .icon{
 
     .respon_t {
         display: flex;
-        width: 100%;
+        flex
     }
 
     .respon_o   {
