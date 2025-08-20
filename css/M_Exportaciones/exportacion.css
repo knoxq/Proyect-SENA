@@ -267,5 +267,7 @@ header .icon{
         border-bottom: none;
     }
 
-    .respon
+    .respon_e {
+        display: none;
+    }
 }
