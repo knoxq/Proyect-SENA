@@ -148,7 +148,9 @@ header .icon{
     text-align: center;
 }
 
-.respon
+.respon_t {
+    display: none;
+}
 
 #buttons {
     text-align: center;
