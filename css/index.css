@@ -229,9 +229,7 @@ footer {
         padding: 1em;
     }
 
-    .icon {
-        margin: 0;
-    }
+    
 
     .nav-header {
         flex-direction: column;
