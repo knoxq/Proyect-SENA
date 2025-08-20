@@ -271,7 +271,12 @@ header .icon{
         border-bottom: none;
     }
 
-    
+    .tableR table{
+    border-collapse: collapse;
+    width: 60%;
+    margin: 1em auto;
+}
+
     .respon_e {
         display: none;
     }
