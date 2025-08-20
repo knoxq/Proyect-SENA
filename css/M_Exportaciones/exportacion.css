@@ -303,3 +303,50 @@ header .icon{
         border-radius: 8px;
     }
 }
+
+@media (max-width: 768px) {
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #4E342E; /* mismo color que ya usas */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+        z-index: 1000;
+    }
+
+    /* Icono centrado arriba */
+    header .icon {
+        margin: 0 auto 8px auto;
+        height: 40px;
+        width: 40px;
+    }
+
+    /* Menú en columna */
+    .nav-header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .nav-header li {
+        margin: 0;
+    }
+
+    .nav-header a {
+        font-size: 1em;
+        text-align: center;
+        display: block;
+        width: 100%;
+        padding: 5px 0;
+    }
+
+    /* Para que el contenido no se oculte detrás del header fijo */
+    body {
+        padding-top: 100px;
+    }
+}
