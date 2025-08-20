@@ -264,6 +264,7 @@ header .icon{
         display: flex;
         margin: auto 0;
         margin-top: 0;
+        
         border-bottom: none;
     }
 }
