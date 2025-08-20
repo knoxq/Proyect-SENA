@@ -291,20 +291,50 @@ header .icon{
     }
 }
 
-/* Tablas responsive SOLO para celulares */
 @media (max-width: 768px) {
-    .tableG, .tableR {
+    .tableG table, 
+    .tableR table {
         width: 100%;
-        overflow-x: auto;   /* Scroll horizontal SOLO dentro de la tabla */
+        border: none;
     }
 
-    .tableG table, .tableR table {
-        width: 600px; /* ancho mínimo de la tabla para que no se aplaste demasiado */
+    .tableG thead,
+    .tableR thead {
+        display: none; /* Ocultar encabezados */
     }
 
-    .tableG th, .tableR th,
-    .tableG td, .tableR td {
-        font-size: 0.85em; /* texto un poco más pequeño */
-        padding: 8px;
+    .tableG tr, 
+    .tableR tr {
+        display: block;
+        margin-bottom: 1em;
+        border: 2px solid #4E342E;
+        border-radius: 10px;
+        padding: 0.5em;
+        background: #fff;
     }
+
+    .tableG td, 
+    .tableR td {
+        display: block;
+        text-align: left;
+        padding: 0.5em;
+        border: none;
+        border-bottom: 1px solid #ddd;
+        font-size: 0.9em;
+    }
+
+    .tableG td:last-child,
+    .tableR td:last-child {
+        border-bottom: none;
+    }
+
+    /* --------- Etiquetas automáticas con nth-child --------- */
+    .tableG td:nth-child(1)::before { content: "Lote Café"; font-weight: bold; display: block; color: #4E342E; }
+    .tableG td:nth-child(2)::before { content: "Estado"; font-weight: bold; display: block; color: #4E342E; }
+
+    .tableR td:nth-child(1)::before { content: "Lote Café"; font-weight: bold; display: block; color: #4E342E; }
+    .tableR td:nth-child(2)::before { content: "País de Destino"; font-weight: bold; display: block; color: #4E342E; }
+    .tableR td:nth-child(3)::before { content: "Origen del Café"; font-weight: bold; display: block; color: #4E342E; }
+    .tableR td:nth-child(4)::before { content: "Cantidad Exportada"; font-weight: bold; display: block; color: #4E342E; }
+    .tableR td:nth-child(5)::before { content: "Precio de Venta"; font-weight: bold; display: block; color: #4E342E; }
 }
