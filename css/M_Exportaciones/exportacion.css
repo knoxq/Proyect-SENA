@@ -246,7 +246,7 @@ header .icon{
     }
 }
 
-@media (max-width: 1000px) {
+@media (min-width: 1000px) {
 
     #lista_desplegable {
         padding: 0;
