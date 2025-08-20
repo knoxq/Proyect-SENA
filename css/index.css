@@ -232,6 +232,7 @@ footer {
     .title {
         margin-left: 0;
         text-align: center;
+        justify-content: center;
     }
 
     .nav-header {
