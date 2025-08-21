@@ -209,10 +209,10 @@ button:hover, a:hover {
   header {
     font-size: 1em;
     padding: 15px;
-  }
-  section {
+    }
+    section {
     padding: 15px;
-  }
+    }
 }
 
 @media (max-width: 600px) {
