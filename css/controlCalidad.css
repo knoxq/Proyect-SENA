@@ -219,5 +219,6 @@ label:hover {
 }
 
 #caja {
+    display: flex;
     justify-content: center;
 }
