@@ -212,7 +212,7 @@ label:hover {
     border-radius: 15px;
     padding: 25px 30px;
     max-width: 420px;
-    margin: 1em auto; /* Centrar */
+    margin: 1em ; /* Centrar */
     box-shadow: 0px 6px 15px rgba(0,0,0,0.2);
     text-align: left;
 }
