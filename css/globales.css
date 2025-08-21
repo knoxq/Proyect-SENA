@@ -36,8 +36,9 @@ h1, h2, h3 {
 
     header .title{
         margin-left: 0;
-        font-size: 0000em;
     }
+
+    .title 
 
     .cerr_move {
         display: none;
