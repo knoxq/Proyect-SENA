@@ -135,18 +135,18 @@ main {
 }
 
 section {
-  background-color: white;
-  padding: 20px;
-  border-radius: 12px;
-  max-width: 600px;
-  width: 100%;
-  box-shadow: 0 4px 12px rgba(78, 52, 46, 0.7);
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(78, 52, 46, 0.7);
 }
 
 form p {
-  margin-top: 15px;
-  font-weight: bold;
-  color: #4e342e;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #4e342e;
 }
 
 input, select {
