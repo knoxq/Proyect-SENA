@@ -185,7 +185,7 @@ label:hover {
 }
 
 .mensaje {
-    display: flex;
+    display: none;
     margin-top: 20px;
     padding: 12px;
     background: #d4edda;
