@@ -1,0 +1,124 @@
+header {
+    display: flex;
+    padding: 2em;
+    background-color: #4E342E;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* MENU DESPLEGABLE */
+
+#lista_desplegable {
+    padding: 10px;
+}
+
+/*  BOTON PARA ABRIR EL MENU */
+
+.menu_act {
+    cursor: pointer;
+    font-size: 20px;
+    color: #F5E6D3;
+    background: none;
+    border: none;
+    padding: 10px;
+}
+
+/*  BOTON OCULTO */
+
+#menu {
+    display: none;
+}
+
+/* MENU DESPLEGABLE */
+
+#lista_desplegable ul{
+    list-style: none;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: left 0.3s ease;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.3);
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+    ), url(../img/cafe_index.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: none;
+}
+
+/* BOTON DE CERRAR */
+
+.menu_cerr{
+    align-self: flex-end;
+    cursor: pointer;
+    font-size: 22px;
+    color: #F5E6D3;
+    padding: 15px;
+}
+
+#lista_desplegable ul li a {
+    display: block;
+    padding: 15px;
+    color: #F5E6D3;
+    text-decoration: none;
+    border-bottom: 1px solid #F5E6D3;
+    transition: background 0.3s;
+}
+
+#lista_desplegable ul li a:hover {
+    background: rgba(78, 52, 46, 0.7);
+}
+
+/* MOSTRAR EL MENU CUANDO EL CHECKBOX ESTE ACTIVO */
+
+#menu:checked ~ ul {
+    left: 0;
+}
+
+
+header .title {
+    display: flex;
+    color: #F5E6D3;
+    font-size: 2em;
+    margin: 0;
+    margin-left: 1em;
+    text-decoration:underline;
+
+}
+
+header .icon{
+    margin-right: 15px;
+    display: flex;
+    background-image: url(../img/icono.png);
+    background-size: cover;
+    background-position: center center;
+    height: 50px;
+    width: 50px;
+}
+
+.nav-header {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-header ul{
+    align-content: center;
+}
+
+.nav-header li {
+    margin-right: 20px;
+    justify-content: baseline;
+}
+
+.nav-header a{
+    text-decoration: none;
+    color: #F5E6D3;
+}

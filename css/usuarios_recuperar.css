@@ -10,7 +10,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-image: url("../img/cafe_prin1_index.png");
+  background-image: url("../img/cafe_index.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -25,12 +25,12 @@ body {
   width: 400px;
 }
 
-.form-registro {
+.form-recuperacion {
   display: flex;
   flex-direction: column;
 }
 
-.form-registro h2 {
+.form-recuperacion h2 {
   text-align: center;
   font-size: 30px;
   text-transform: uppercase;
@@ -38,14 +38,14 @@ body {
   margin-bottom: 25px;
 }
 
-.form-registro label {
+.form-recuperacion label {
   font-size: 17px;
   margin-bottom: 8px;
   color: #333333;
 }
 
-.form-registro input,
-.form-registro select {
+.form-recuperacion input,
+.form-recuperacion select {
   padding: 15px;
   border: 1px solid #7d5a52;
   border-radius: 25px;
@@ -56,7 +56,7 @@ body {
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.form-registro button {
+.form-recuperacion button {
   padding: 15px;
   background-color: #8ac572; 
   font-size: 16px;
@@ -69,7 +69,7 @@ body {
   margin-top: 20px;
 }
 
-.form-registro button a{
+.form-recuperacion button a {
   text-decoration: none;
   color: #4E342E;
 }
@@ -83,4 +83,3 @@ body {
     width: 100%;
   }
 }
-
