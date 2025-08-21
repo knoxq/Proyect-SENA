@@ -206,7 +206,6 @@ label:hover {
     display: flex;
     flex-direction: column;
     text-align: center;
-    border: #155724 solid;
 }
 
 .centro div {
