@@ -293,3 +293,33 @@ label:active {
         padding: 1.2em;
     }
 }
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 1em 2em;
+    }
+
+    #img_prin {
+        font-size: 3rem;
+        height: 50vh;
+    }
+
+    #cont_prin {
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: space-around;
+        gap: 2em;
+        padding: 2em;
+    }
+
+    .prin1, .prin2 {
+        flex: 1 1 45%;
+        max-width: 45%;
+        text-align: center;
+    }
+
+    .prin_img1, .prin_img2 {
+        height: 220px;
+    }
