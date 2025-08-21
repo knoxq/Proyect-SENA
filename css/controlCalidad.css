@@ -257,3 +257,40 @@ label:active {
     }
 }
 
+@media (max-width: 600px) {
+    /* Header */
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1em;
+        padding: 1em;
+    }
+
+    header .title {
+        margin-left: 0;
+    }
+
+    .nav-header {
+        flex-direction: column;
+        gap: 0.8em;
+    }
+
+    .nav-header a {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 1em 2em;
+    }
+}
+
+@media (min-width: 1025px) {
+    header {
+        padding: 1.5em 3em;
+    }
+}
