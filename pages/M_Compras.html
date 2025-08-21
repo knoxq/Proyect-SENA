@@ -36,5 +36,37 @@
             </ul>
         </div>
     </header>
+    <main>
+    <section id="formulario">
+        <h2>Registrar Compra</h2>
+        <form action="#mensaje">
+        <p>Nombre del Caficultor:</p>
+        <input type="text" name="caficultor" placeholder="Ej: Juan Pérez">
+
+        <p>Cantidad de Café (kg):</p>
+        <input type="number" name="cantidad">
+
+        <p>Precio por kg ($COP):</p>
+        <input type="number" name="precio">
+
+        <p>Finca Asociada:</p>
+        <select name="finca">
+            <option value="">Selecciona una finca</option>
+            <option value="finca1">Finca La Esperanza</option>
+            <option value="finca2">Finca El Porvenir</option>
+            <option value="finca3">Finca Santa Rosa</option>
+        </select>
+
+        <button type="submit">Registrar Compra</button>
+        </form>
+    </section>
+
+    <div id="mensaje">
+        <div class="contenido-mensaje">
+        <h2>✅ Su compra ha sido un éxito</h2>
+        <a href="#">Volver</a>
+        </div>
+    </div>
+    </main>
 </body>
 </html>
