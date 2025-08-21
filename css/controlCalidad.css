@@ -278,7 +278,18 @@ label:active {
     .lab_move {
         display: none;
     }
-    
+        .formulario-box {
+        max-width: 90%;
+        padding: 20px;
+    }
+    .formulario-box h2 {
+        font-size: 1em;
+    }
+    .boton {
+        font-size: 15px;
+        padding: 10px;
+    }
+}
 }
 
 
