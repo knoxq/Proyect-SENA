@@ -28,28 +28,27 @@ h1, h2, h3 {
     margin: auto;
 }
 
-@media (min-width: 601px) and (max-width: 1024px) {
-    header {
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 1em 2em;
-    }
-        .formulario-box {
-        max-width: 90%;
-        padding: 20px;
-    }
-    .formulario-box h2 {
-        font-size: 1em;
-    }
-    .boton {
-        font-size: 15px;
-        padding: 10px;
-    }
-}
+@media (max-width: 500px) {
 
-
-@media (min-width: 1025px) {
-    header {
-        padding: 1.5em 3em;
+    #lista_desplegable {
+        padding: 0;
     }
-}
+
+    header .title{
+        margin-left: 0;
+    }
+
+    .cerr_move {
+        display: none;
+    }
+
+    .lab_move {
+        display: none;
+    }
+
+    .li_move {
+        
+        margin-bottom: 2em;
+        display: flex;
+        border-bottom: none;
+    }
