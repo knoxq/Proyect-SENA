@@ -8,11 +8,11 @@
     <title> CoffeeTivApp Reportes </title>
 </head>
 <body>
-        <header>
+            <header>
         <nav id="lista_desplegable">
             <!-- BOTONES PARA ACTIVAR -->
             <input type="checkbox" id="menu">
-            <label for="menu" class="menu_act"> ☰ Menú </label>
+            <label for="menu" class="menu_act"> ☰ <span class="lab_move">Menú</span></label>
 
             <!-- CONTENIDO MENU -->
             <ul>
@@ -20,19 +20,21 @@
                 <label for="menu" class="menu_cerr"> ✖ </label>
 
                 <!-- NAVEGACION  -->
-                <li><a href="M_Cafeteros.html">Cafeteros</a></li>
-                <li><a href="M_Compras.html">Compras</a></li>
-                <li><a href="M_controlCalidad.html">Control de Calidad</a></li>
-                <li><a href="M_Exportacion/M_Exportacion.html">Exportaciones</a></li>
-                <li><a href="M_Reportes.html">Reportes</a></li>
+                <li class="li_move"><a href="../P_Principales/index.html">cerrar sesion</a></li>
+                <li><a href="../M_Cafeteros.html">Cafeteros</a></li>
+                <li><a href="../M_Compras.html">Compras</a></li>
+                <li><a href="../M_controlCalidad.html">Control de Calidad</a></li>
+                <li><a href="../M_Exportacion/M_Exportacion.html">Exportaciones</a></li>
+                <li><a href="../M_Reportes.html">Reportes</a></li>
+                
             </ul>
         </nav>
 
         <!-- TITULO  -->
         <h1 class="title"><div class="icon"></div>CoffeeTivApp</h1>
-        <div>
+        <div class="cerr_move">
             <ul class="nav-header">
-                    <li><a href="P_Principales/index.html">Cerrar Sesion</a></li>
+                    <li><a href="/pages/P_Principales/index.html">Cerrar Sesion</a></li>
             </ul>
         </div>
     </header>
