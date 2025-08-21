@@ -27,3 +27,29 @@ h1, h2, h3 {
     max-width: 1200px;
     margin: auto;
 }
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 1em 2em;
+    }
+        .formulario-box {
+        max-width: 90%;
+        padding: 20px;
+    }
+    .formulario-box h2 {
+        font-size: 1em;
+    }
+    .boton {
+        font-size: 15px;
+        padding: 10px;
+    }
+}
+
+
+@media (min-width: 1025px) {
+    header {
+        padding: 1.5em 3em;
+    }
+}
