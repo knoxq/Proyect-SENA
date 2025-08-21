@@ -191,18 +191,18 @@ button:hover, a:hover {
 }
 
 .contenido-mensaje {
-  background: white;
-  padding: 30px;
-  border-radius: 10px;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  max-width: 400px;
-  width: 90%;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    max-width: 400px;
+    width: 90%;
 }
 
 .contenido-mensaje h2 {
-  margin-bottom: 20px;
-  color: #6b4c3b;
+    margin-bottom: 20px;
+    color: #6b4c3b;
 }
 
 @media (max-width: 900px) {
