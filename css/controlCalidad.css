@@ -206,9 +206,9 @@ label:hover {
     display: flex;
     flex-direction: column;
     text-align: center;
+    border: #155724 solid;
 }
 
 .centro div {
     margin: 0.5em 0;
-    border: #155724 solid;
 }
