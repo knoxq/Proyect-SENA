@@ -122,3 +122,108 @@ header .icon{
     color: #F5E6D3;
 }
 
+#chamo {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+#platano {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#banano {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(78, 52, 46, 0.7);
+}
+
+.uno , .texto {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #4e342e;
+}
+
+.cuestionario, .finca {
+  width: 90%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.hola, #simio {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #4e342e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.hola:hover, .nose:hover {
+  background-color: #593e2f;
+}
+
+#mensaje {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+#mensaje:target {
+  display: flex;
+}
+
+.contenido-mensaje {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  max-width: 400px;
+  width: 90%;
+}
+
+.contenido-mensaje , .nose {
+  margin-bottom: 20px;
+  color: #6b4c3b;
+}
+
+@media (max-width: 900px) {
+  #banano {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  #platano {
+    padding: 10px;
+  }
+  #banano {
+    padding: 15px;
+  }
+  .cuestionario, .finca, .hola , #simio {
+    font-size: 0.95em;
+    padding: 10px;
+  }
+  .contenido-mensaje {
+    padding: 15px;
+    font-size: 0.9em;
+  }
+}

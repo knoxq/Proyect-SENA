@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/compras.css">
     <title> CoffeeTivApp Compras </title>
 </head>
-<body>
+<body id="chamo">
     <header>
         <nav id="lista_desplegable">
             <!-- BOTONES PARA ACTIVAR -->
@@ -36,35 +36,35 @@
             </ul>
         </div>
     </header>
-    <main>
-    <section id="formulario">
-        <h2>Registrar Compra</h2>
-        <form action="#mensaje">
-        <p>Nombre del Caficultor:</p>
-        <input type="text" name="caficultor" placeholder="Ej: Juan Pérez">
+    <main id="platano">
+    <section id="banano">
+        <h2 class="no_se">Registrar Compra</h2>
+        <form class="uno" action="#mensaje">
+        <p class="texto">Nombre del Caficultor:</p>
+        <input type="text" name="caficultor" placeholder="Ej: Juan Pérez" class="cuestionario">
 
-        <p>Cantidad de Café (kg):</p>
-        <input type="number" name="cantidad">
+        <p class="texto">Cantidad de Café (kg):</p>
+        <input type="number" name="cantidad" class="cuestionario">
 
-        <p>Precio por kg ($COP):</p>
-        <input type="number" name="precio">
+        <p class="texto">Precio por kg ($COP):</p>
+        <input type="number" name="precio" class="cuestionario">
 
-        <p>Finca Asociada:</p>
-        <select name="finca">
+        <p class="texto">Finca Asociada:</p>
+        <select class="finca">
             <option value="">Selecciona una finca</option>
             <option value="finca1">Finca La Esperanza</option>
             <option value="finca2">Finca El Porvenir</option>
             <option value="finca3">Finca Santa Rosa</option>
         </select>
 
-        <button type="submit">Registrar Compra</button>
+        <button type="submit" class="hola">Registrar Compra</button>
         </form>
     </section>
 
     <div id="mensaje">
         <div class="contenido-mensaje">
-        <h2>✅ Su compra ha sido un éxito</h2>
-        <a href="#">Volver</a>
+        <h2 class="nose">✅ Su compra ha sido un éxito</h2>
+        <a id="simio" href="#">Volver</a>
         </div>
     </div>
     </main>
