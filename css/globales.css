@@ -28,7 +28,9 @@ h1, h2, h3 {
     margin: auto;
 }
 
-.li_move
+.li_move{
+    
+}
 
 @media (max-width: 500px) {
 
