@@ -216,22 +216,22 @@ button:hover, a:hover {
 }
 
 @media (max-width: 600px) {
-  header {
+    header {
     font-size: 0.95em;
     padding: 10px;
-  }
-  main {
+    }
+    main {
     padding: 10px;
-  }
-  section {
+    }
+    section {
     padding: 15px;
-  }
-  input, select, button, a {
+    }
+    input, select, button, a {
     font-size: 0.95em;
     padding: 10px;
-  }
-  .contenido-mensaje {
+    }
+    .contenido-mensaje {
     padding: 15px;
     font-size: 0.9em;
-  }
+    }
 }
