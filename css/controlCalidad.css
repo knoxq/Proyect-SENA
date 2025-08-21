@@ -209,6 +209,7 @@ label:hover {
 }
 
 .formulario-box {
+    background: #f5e6d3; /* Beige café */
     border-radius: 15px;
     padding: 25px 30px;
     max-width: 420px;
