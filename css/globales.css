@@ -38,7 +38,9 @@ h1, h2, h3 {
         margin-left: 0;
     }
 
-    .title h1
+    .title h1{
+        
+    }
 
     .cerr_move {
         display: none;
