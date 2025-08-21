@@ -223,7 +223,7 @@ label:active {
 }
 
 /* Celularcito */
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     .formulario-box {
         max-width: 95%;
         padding: 15px;
