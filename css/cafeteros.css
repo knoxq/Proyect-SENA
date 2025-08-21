@@ -254,7 +254,7 @@ table tr:hover {
 }
 
 #mod_table {
-
+    display: none;
 }
 
 @media (max-width: 600px) {
