@@ -206,7 +206,7 @@ button:hover, a:hover {
 }
 
 @media (max-width: 900px) {
-  header {
+    header {
     font-size: 1em;
     padding: 15px;
     }
