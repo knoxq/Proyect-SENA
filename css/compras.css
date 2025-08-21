@@ -173,7 +173,7 @@ button, a {
 }
 
 button:hover, a:hover {
-  background-color: #593e2f;
+    background-color: #593e2f;
 }
 
 #mensaje {
