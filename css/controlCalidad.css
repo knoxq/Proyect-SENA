@@ -222,6 +222,21 @@ label:active {
     justify-content: center;
 }
 
+/* Tablets */
+@media (max-width: 768px) {
+    .formulario-box {
+        max-width: 90%;
+        padding: 20px;
+    }
+    .formulario-box h2 {
+        font-size: 1em;
+    }
+    .boton {
+        font-size: 15px;
+        padding: 10px;
+    }
+}
+
 /*Celularcito*/
 @media (max-width: 480px) {
     .formulario-box {
