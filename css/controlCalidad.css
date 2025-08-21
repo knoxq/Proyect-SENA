@@ -287,6 +287,22 @@ label:active {
         justify-content: space-between;
         padding: 1em 2em;
     }
+        #lista_desplegable {
+        padding: 0;
+    }
+
+    header .title{
+        margin-left: 0;
+    }
+
+    .cerr_move {
+        display: none;
+    }
+
+    .lab_move {
+        display: none;
+    }
+}
 }
 
 @media (min-width: 1025px) {
