@@ -128,7 +128,6 @@ body {
     padding: 0;
 }
 main {
-    margin: auto auto;
     padding: 20px;
     display: flex;
     justify-content: center;
