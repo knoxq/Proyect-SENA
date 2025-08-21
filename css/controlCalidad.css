@@ -175,7 +175,7 @@ label:active {
     transform: scale(0.15);
 }
 
-.colorlabel:hover {
+.color-blanco label:hover {
     background: #F5E6D3;
     color: #4E342E;
 }
