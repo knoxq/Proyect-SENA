@@ -195,6 +195,7 @@ label:hover {
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
+    justify-content: center;
 }
 
 #check:checked ~ .mensaje {
