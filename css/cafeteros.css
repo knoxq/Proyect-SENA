@@ -268,6 +268,6 @@ table tr:hover {
         display: block;
     }
     #mod_table2 {
-    display: none;
+    display: block;
     }
 }
