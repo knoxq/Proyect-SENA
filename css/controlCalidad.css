@@ -294,3 +294,21 @@ label:active {
         padding: 1.5em 3em;
     }
 }
+
+@media (max-width: 500px) {
+
+    #lista_desplegable {
+        padding: 0;
+    }
+
+    header .title{
+        margin-left: 0;
+    }
+
+    .cerr_move {
+        display: none;
+    }
+
+    .lab_move {
+        display: none;
+    }
