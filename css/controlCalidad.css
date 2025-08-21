@@ -150,10 +150,6 @@ h1 {
     font-size: 4em;
 }
 
-.color_blanco {
-    background-color: #fafafa;
-}
-
 #check {
     display: none;
 }
@@ -195,6 +191,7 @@ label:hover {
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 
 #check:checked ~ .mensaje {
@@ -209,4 +206,8 @@ label:hover {
 
 .centro div {
     margin: 0.5em 0;
+}
+
+#caja {
+    j
 }
