@@ -205,5 +205,5 @@ label:hover {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    ali
+    align-content: center;
 }
