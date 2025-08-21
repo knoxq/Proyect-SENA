@@ -154,7 +154,7 @@ h1 {
     display: none;
 }
 
- label {
+.color_blanco label {
     border: 0;
     color: #F5E6D3;
     background-image: linear-gradient(
