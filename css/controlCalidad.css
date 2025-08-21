@@ -223,7 +223,7 @@ label:active {
 }
 
 /* Tabletsitas */
-@media (max-width: 768px) {
+@media (max-width: px) {
     .formulario-box {
         max-width: 90%;
         padding: 20px;
