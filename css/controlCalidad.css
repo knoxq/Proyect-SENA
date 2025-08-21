@@ -204,5 +204,5 @@ label:hover {
 .centro {
     display: flex;
     flex-direction: column;
-    margin: 0px ;
+    margin: 0px auto;
 }
