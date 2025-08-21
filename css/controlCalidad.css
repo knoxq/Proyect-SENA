@@ -324,3 +324,8 @@ label:active {
         height: 220px;
     }
 }
+
+@media (min-width: 1025px) {
+    header {
+        padding: 1.5em 3em;
+    }
