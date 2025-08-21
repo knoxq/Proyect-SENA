@@ -219,4 +219,5 @@ label:hover {
 }
 
 #caja {
-    justif
+    justify-content: center;
+}
