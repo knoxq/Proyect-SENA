@@ -70,6 +70,47 @@ input{
 }
 
 
+#background-image {
+    background: url('../../img/cafe_index.jpg') center/cover no-repeat;
+    filter: none;
+    flex: 0 0 70%;
+    max-width: 70%;
+}
+
+#login-container {
+    background-color: var(--cream-50);
+    flex: 0 0 30%;
+    max-width: 30%;
+    margin-left: auto;
+    height: 100vh;
+}
+
+#form-wrapper {
+    max-width: 520px;
+    width: 90%;
+}
+
+#login-icon {
+    height: 64px;
+    width: 64px;
+    display: inline-block;
+}
+
+#welcome-text {
+    color: var(--coffee-800);
+}
+
+#back-link,
+#forgot-link,
+#register-link {
+    color: var(--coffee-700);
+}
+
+#login-button {
+    background-color: #2e7d32;
+    border-color: #2e7d32;
+}
+
 @media(max-width:991px) { 
     
     body{ 
