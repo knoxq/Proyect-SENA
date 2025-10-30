@@ -1,85 +1,90 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background-image: url("../img/cafe_index.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #333333;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("../img/cafe2_index.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.registro-container {
-  background-color: #F5E6D3;
-  padding: 50px;
-  border-radius: 15px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.2);
-  width: 400px;
+#background-image {
+    background: url('../../img/cafe_index.jpg') center/cover no-repeat;
+    filter: none;
+    flex: 0 0 70%;
+    max-width: 70%;
 }
 
-.form-recuperacion {
-  display: flex;
-  flex-direction: column;
+#recover-container {
+    background-color: var(--cream-50);
+    flex: 0 0 30%;
+    max-width: 30%;
+    margin-left: auto;
+    height: 100vh;
 }
 
-.form-recuperacion h2 {
-  text-align: center;
-  font-size: 30px;
-  text-transform: uppercase;
-  color: #333333;
-  margin-bottom: 25px;
+#form-wrapper {
+    max-width: 520px;
+    width: 90%;
 }
 
-.form-recuperacion label {
-  font-size: 17px;
-  margin-bottom: 8px;
-  color: #333333;
+#recover-icon {
+    height: 64px;
+    width: 64px;
+    display: inline-block;
 }
 
-.form-recuperacion input,
-.form-recuperacion select {
-  padding: 15px;
-  border: 1px solid #7d5a52;
-  border-radius: 25px;
-  margin-bottom: 20px;
-  outline: none;
-  font-size: 16px;
-  color: #4E342E;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+#recover-title {
+    color: var(--coffee-800);
 }
 
-.form-recuperacion button {
-  padding: 15px;
-  background-color: #8ac572; 
-  font-size: 16px;
-  color: #333333;
-  text-transform: uppercase;
-  cursor: pointer;
-  border-radius: 25px;
-  border: none;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-  margin-top: 20px;
+#login-link {
+    color: var(--coffee-700);
 }
 
-.form-recuperacion button a {
-  text-decoration: none;
-  color: #4E342E;
+#recover-button {
+    background-color: #2e7d32;
+    border-color: #2e7d32;
 }
 
-@media (max-width: 991px) {
-  body {
-    padding: 30px;
-  }
+h2 {
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #4E342E;
+    margin-bottom: 25px;
+}
 
-  .registro-container {
-    width: 100%;
-  }
+label, p {
+    font-size: 17px;
+    color: #4E342E;
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 17px 11px;
+    border: 1px solid #7d5a52;
+    border-radius: 25px;
+    margin-bottom: 25px;
+    background-color: #FAFAFA;
+    outline: none;
+    color: #4E342E;
+    font-size: 17px;
+}
+
+@media(max-width:991px) {
+    body {
+        padding: 30px;
+    }
+    form {
+        width: 100%;
+    }
 }
