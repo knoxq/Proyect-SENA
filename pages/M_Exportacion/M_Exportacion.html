@@ -3,120 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../../css/globales.css">
     <link rel="stylesheet" href="../../css/M_Exportaciones/exportacion.css">
     <title> CoffeeTivApp Reportes </title>
 </head>
 <body>
     <header>
-        <nav id="lista_desplegable">
-            <!-- BOTONES PARA ACTIVAR -->
-            <input type="checkbox" id="menu">
-            <label for="menu" class="menu_act"> ☰ <span class="lab_move">Menú</span></label>
-
-            <!-- CONTENIDO MENU -->
-            <ul>
-                <!-- BOTON PARA CERRAR -->
-                <label for="menu" class="menu_cerr"> ✖ </label>
-
-                <!-- NAVEGACION  -->
-                <li class="li_move"><a href="../P_Principales/index.html">cerrar sesion</a></li>
-                <li><a href="../M_Cafeteros.html">Cafeteros</a></li>
-                <li><a href="../M_Compras.html">Compras</a></li>
-                <li><a href="../M_controlCalidad.html">Control de Calidad</a></li>
-                <li><a href="../M_Exportacion/M_Exportacion.html">Exportaciones</a></li>
-                <li><a href="../M_Reportes.html">Reportes</a></li>
-                
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                    <span class="icon"></span>
+                    <span class="fw-bold">CoffeeTivApp</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="../M_Cafeteros.html">Cafeteros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../M_Compras.html">Compras</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../M_controlCalidad.html">Control de Calidad</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="../M_Exportacion/M_Exportacion.html">Exportaciones</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../M_Reportes.html">Reportes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../P_Principales/index.html">Cerrar Sesión</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-
-        <!-- TITULO  -->
-        <h1 class="title"><div class="icon"></div>CoffeeTivApp</h1>
-        <div class="cerr_move">
-            <ul class="nav-header">
-                <li><a href="/pages/P_Principales/index.html">Cerrar Sesion</a></li>
-            </ul>
-        </div>
     </header>
 
-    <section id="gestion_lotes">
+    <section id="gestion_lotes" class="container my-4">
         <div class="titleG">
-            <h1> Gestion de Lotes</h1>
+            <h1 class="h3"> Gestion de Lotes</h1>
         </div>
         <div class="tableG">
-            <table>
-                <tr>
-                    <th> ID del Lote </th>
-                    <th> ¿Listo para exportacion? </th>
-                </tr>
-                <tr>
-                    <td> Lote - S#01 </td>
-                    <td> No  listo para exportacion </td>
-                </tr>
-                <tr>
-                    <td> Lote - N#02 </td>
-                    <td> Listo para exportacion </td>
-                </tr>
-            </table>
-            <div id="buttons">
-                <button class="b1"><a href="añadir_g.html">AÑADIR</a></button>
-                <button class="b2"><a href="eliminar_g.html">ELIMINAR</a></button>
-                <button class="b3"><a href="editar_g.html">EDITAR</a></button>
+            <div class="table-responsive">
+                <table class="table table-striped align-middle">
+                    <thead>
+                        <tr>
+                            <th> ID del Lote </th>
+                            <th> ¿Listo para exportación? </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> Lote - S#01 </td>
+                            <td> No listo para exportación </td>
+                        </tr>
+                        <tr>
+                            <td> Lote - N#02 </td>
+                            <td> Listo para exportación </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="buttons" class="d-flex gap-2">
+                <a class="btn btn-success" href="añadir_g.html">Añadir</a>
+                <a class="btn btn-danger" href="eliminar_g.html">Eliminar</a>
+                <a class="btn btn-primary" href="editar_g.html">Editar</a>
             </div>
         </div>
     </section>
 
-    <section id="registros">
+    <section id="registros" class="container my-4">
         <div class="titleR">
-            <h1> Registros </h1>
+            <h1 class="h3"> Registros </h1>
         </div>
         <div class="tableR">
-            <table class="respon_e">
-                <tr>
-                    <th> Lote Cafe</th>
-                    <th> Pais de Destino</th>
-                    <th> Origen del Cafe</th>
-                    <th> Cantidad Exportada en Toneladas </th>
-                    <th> Precio de Venta </th>
-                </tr>
-                <tr>
-                    <td> S#01 </td>
-                    <td> Argentina </td>
-                    <td> Colombia </td>
-                    <td> 9 </td>
-                    <td> 200 millones </td>
-                </tr>
-            </table>
-            <table class="respon_t">
-                <tr>
-                    <th> Lote Cafe</th>
-                    <th> Pais de Destino</th>
-                    <th> Origen del Cafe</th>
-                    
-                </tr>
-                    <tr>
-                        <td> S#01 </td>
-                        <td> Argentina </td>
-                        <td> Colombia </td>
-                    </tr>
-            </table>
-            <table class="respon_t">
-                    <tr>
-                        <th> Cantidad Exportada en Toneladas </th>
-                        <th> Precio de Venta </th>
-                    </tr>
-                    <tr>
-                        <td> 9 </td>
-                        <td> 200 millones </td>
-                    </tr>
-            </table>
-            <div id="buttons">
-                <button class="b1"><a href="añadir_r.html">AÑADIR</a></button>
-                <button class="b2"><a href="eliminar_r.html">ELIMINAR</a></button>
-                <button class="b3"><a href="editar_r.html">EDITAR</a></button>
+            <div class="table-responsive">
+                <table class="table table-striped align-middle">
+                    <thead>
+                        <tr>
+                            <th> Lote Café</th>
+                            <th> País de Destino</th>
+                            <th> Origen del Café</th>
+                            <th> Cantidad Exportada (Ton)</th>
+                            <th> Precio de Venta </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> S#01 </td>
+                            <td> Argentina </td>
+                            <td> Colombia </td>
+                            <td> 9 </td>
+                            <td> 200 millones </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="buttons" class="d-flex gap-2">
+                <a class="btn btn-success" href="añadir_r.html">Añadir</a>
+                <a class="btn btn-danger" href="eliminar_r.html">Eliminar</a>
+                <a class="btn btn-primary" href="editar_r.html">Editar</a>
             </div>
         </div>
     </section>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

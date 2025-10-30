@@ -1,3 +1,15 @@
+:root {
+    --coffee-900: #3B2A25;
+    --coffee-800: #4E342E;
+    --coffee-700: #6D4C41;
+    --cream-100: #F5E6D3;
+    --cream-50: #FFF8F1;
+    --accent: #C49A6C;
+    --link: #8d6e63;
+    --text: #333333;
+    --font-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,13 +17,13 @@
 }
 
 body {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: var(--font-base);
+    background-color: var(--cream-50);
+    color: var(--text);
 }
 
 a {
-    color: #007bff;
+    color: var(--link);
 }
 
 a:hover {
@@ -61,4 +73,48 @@ h1, h2, h3 {
         display: flex;
         border-bottom: none;
     }
+}
+
+/* NAVBAR Bootstrap tema café */
+.navbar-coffee {
+    background-color: var(--coffee-800) !important;
+}
+
+.navbar-coffee .navbar-brand,
+.navbar-coffee .nav-link {
+    color: var(--cream-100) !important;
+}
+
+.navbar-coffee .nav-link.active,
+.navbar-coffee .nav-link:focus,
+.navbar-coffee .nav-link:hover {
+    color: #ffffff !important;
+}
+
+.navbar-coffee .navbar-toggler {
+    border-color: rgba(245, 230, 211, 0.6);
+}
+
+.navbar-coffee .navbar-toggler-icon {
+    filter: invert(95%);
+}
+
+/* Icono de marca reutilizable */
+.icon {
+    display: inline-block;
+    background-image: url(../img/icono.png);
+    background-size: cover;
+    background-position: center center;
+    height: 50px;
+    width: 50px;
+}
+
+/* Variante para páginas que usan .icono */
+.icono {
+    display: inline-block;
+    background-image: url(../img/icono.png);
+    background-size: cover;
+    background-position: center center;
+    height: 50px;
+    width: 50px;
 }
