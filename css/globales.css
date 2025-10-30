@@ -8,6 +8,8 @@
     --link: #8d6e63;
     --text: #333333;
     --font-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --green-accent: #607d3b;
+    --green-accent-hover: #506a32;
 }
 
 * {
@@ -78,6 +80,8 @@ h1, h2, h3 {
 /* NAVBAR Bootstrap tema café */
 .navbar-coffee {
     background-color: var(--coffee-800) !important;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 .navbar-coffee .navbar-brand,
@@ -85,10 +89,25 @@ h1, h2, h3 {
     color: var(--cream-100) !important;
 }
 
-.navbar-coffee .nav-link.active,
-.navbar-coffee .nav-link:focus,
+.navbar-coffee .navbar-brand img {
+    height: 35px;
+    width: auto;
+}
+
+.navbar-coffee .nav-link {
+    transition: all 0.3s ease;
+    border-radius: 0.25rem;
+}
+
 .navbar-coffee .nav-link:hover {
+    background-color: var(--coffee-700);
     color: #ffffff !important;
+}
+
+.navbar-coffee .nav-link.active {
+    font-weight: bold;
+    color: #ffffff !important;
+    background-color: var(--coffee-900);
 }
 
 .navbar-coffee .navbar-toggler {
@@ -98,6 +117,22 @@ h1, h2, h3 {
 .navbar-coffee .navbar-toggler-icon {
     filter: invert(95%);
 }
+
+.btn-register {
+    background-color: var(--green-accent);
+    color: var(--cream-50) !important;
+    border: none;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-register:hover {
+    background-color: var(--green-accent-hover);
+    color: #ffffff !important;
+    text-decoration: none;
+}
+
 
 /* Icono de marca reutilizable */
 .icon {
