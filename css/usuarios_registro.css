@@ -84,3 +84,41 @@ body {
   }
 }
 
+.register-bg-image {
+    background: url('../../img/cafe_index.jpg') center/cover no-repeat;
+    filter: none;
+    flex: 0 0 70%;
+    max-width: 70%;
+}
+
+.register-form-container {
+    background-color: var(--cream-50);
+    flex: 0 0 30%;
+    max-width: 30%;
+    margin-left: auto;
+    height: 100vh;
+}
+
+.register-form-wrapper {
+    max-width: 520px;
+    width: 90%;
+}
+
+.register-icon {
+    height: 64px;
+    width: 64px;
+    display: inline-block;
+}
+
+.register-title {
+    color: var(--coffee-800);
+}
+
+.btn-register-submit {
+    background-color: #2e7d32;
+    border-color: #2e7d32;
+}
+
+.login-link {
+    color: var(--coffee-700);
+}
