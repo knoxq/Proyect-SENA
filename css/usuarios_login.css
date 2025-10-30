@@ -41,34 +41,6 @@ input{
     font-size: 17px;
 }
 
-.olvide {
-    justify-content: space-between;
-    display: flex;
-    margin-bottom: 25px;
-}
-
-.olvide a{
-    text-decoration: none;
-    color: #4E342E;
-}
-
-.form-iniciar button{
-    padding: 15px;
-    background-color: #8ac572; 
-    font-size: 16px;
-    color: #333333;
-    text-transform: uppercase;
-    cursor: pointer;
-    border-radius: 25px;
-    border: none;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-}
-
-.form-iniciar button a{
-    text-decoration: none;
-    color: #4E342E;
-}
-
 
 #background-image {
     background: url('../../img/cafe_index.jpg') center/cover no-repeat;
