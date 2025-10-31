@@ -27,47 +27,53 @@
                     <label for="menu" class="menu_cerr"> ✖ </label>
                     <!-- NAVEGACION  -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-        </div>
-        </div>
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        Reportes
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                            <li><a href="javascript:void(0)"
+                                                    onclick="mostrarTabla('cultivos')">Registro de cultivos</a></li>
+                                            <li><a href="javascript:void(0)"
+                                                    onclick="mostrarTabla('actividad')">Registro de actividad</a></li>
+                                            <li><a href="javascript:void(0)"
+                                                    onclick="mostrarTabla('lote')">Registro de lote</a></li>
+                                    </div>
+                                </div>
+                            </div>
 
-        </li>
-        <li><a href="Alertas_y_recordatorios.html">Alertas y recordatorios</a></li>
-        <li><a href="Inventario_de_insumos.html">Inventario de insumos</a></li>
-        <li><a href="Asistencia_tecnica.html">Asistencia técnica</a></li>
-        <li><a href="Historial_y _reportes.html">Historial y reportes</a></li>
-        </ul>
-        </nav>
-        <nav class="navbar navbar-expand-lg navbar-coffee">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
-                        <li class="nav-item"><a class="nav-link" href="../M_Usuarios/M_usuarios_login.html"><i
-                                    class="fas fa-right-to-bracket me-1"></i>Iniciar Sesión</a></li>
-                        <li class="nav-item"><a class="btn btn-register"
-                                href="../M_Usuarios/M_usuarios_registro.html"><i
-                                    class="fas fa-user-plus me-1"></i>Registrar</a></li>
-                    </ul>
+                    </li>
+                    <li><a href="Alertas_y_recordatorios.html">Alertas y recordatorios</a></li>
+                    <li><a href="Inventario_de_insumos.html">Inventario de insumos</a></li>
+                    <li><a href="Asistencia_tecnica.html">Asistencia técnica</a></li>
+                    <li><a href="Historial_y _reportes.html">Historial y reportes</a></li>
+                </ul>
+            </nav>
+            <nav class="navbar navbar-expand-lg navbar-coffee">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                            <li class="nav-item"><a class="nav-link" href="../M_Usuarios/M_usuarios_login.html"><i
+                                        class="fas fa-right-to-bracket me-1"></i>Iniciar Sesión</a></li>
+                            <li class="nav-item"><a class="btn btn-register"
+                                    href="../M_Usuarios/M_usuarios_registro.html"><i
+                                        class="fas fa-user-plus me-1"></i>Registrar</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
 
         </div>
     </header>
