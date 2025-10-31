@@ -10,7 +10,7 @@ header {
 
 #lista_desplegable {
     position: absolute;
-    z-index: 100;
+    z-index: 1040;
 }
 
 /*  BOTON PARA ABRIR EL MENU */
@@ -54,7 +54,7 @@ header {
     background-size: cover;
     background-position: center center;
     background-repeat: none;
-    z-index: 99;
+    z-index: 1039;
 }
 
 /* BOTON DE CERRAR */
