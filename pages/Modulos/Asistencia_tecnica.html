@@ -13,37 +13,43 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-coffee">
             <div class="container-fluid">
-                <a class="navbar-brand d-flex align-items-center gap-2" href="bienvenida.html">
-                    <span class="fw-bold title d-flex align-items-center mx-0"> <span class="icono me-2"></span> CoffeeTivApp</span>
+                <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                    <div class="dropdown">
+                        <span class="fw-bold title d-flex align-items-center mx-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="icono me-2"></span> CoffeeTivApp
+                        </span>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Alertas_y_recordatorios.html">Alertas y recordatorios</a></li>
+                            <li><a class="dropdown-item" href="Asistencia_tecnica.html">Asistencia tecnica</a></li>
+                            <li><a class="dropdown-item" href="bienvenida.html">Bienvenida</a></li>
+                            <li><a class="dropdown-item" href="Historial_y _reportes.html">Historial y reportes</a></li>
+                            <li><a class="dropdown-item" href="Inventario_de_insumos.html">Inventario de insumos</a></li>
+                            <li><a class="dropdown-item" href="Registro.html">Registro</a></li>
+                        </ul>
+                    </div>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
-                        <li class="nav-item"><a class="nav-link" href="bienvenida.html"><i class="fas fa-home me-1"></i>Bienvenida</a></li>
-                        <li class="nav-item"><a class="nav-link" href="Registro.html"><i class="fas fa-address-card me-1"></i>Registro</a></li>
-                        <li class="nav-item"><a class="nav-link" href="Alertas_y_recordatorios.html"><i class="fas fa-bell me-1"></i>Alertas y recordatorios</a></li>
-                        <li class="nav-item"><a class="nav-link" href="Inventario_de_insumos.html"><i class="fas fa-boxes-stacked me-1"></i>Inventario de insumos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="Asistencia_tecnica.html"><i class="fas fa-headset me-1"></i>Asistencia técnica</a></li>
-                        <li class="nav-item"><a class="nav-link" href="Historial_y _reportes.html"><i class="fas fa-history me-1"></i>Historial y reportes</a></li>
-                        <li class="nav-item ms-lg-3"><a class="nav-link" href="../M_Usuarios/M_usuarios_login.html"><i class="fas fa-right-to-bracket me-1"></i>Iniciar Sesión</a></li>
-                        <li class="nav-item"><a class="btn btn-register" href="../M_Usuarios/M_usuarios_registro.html"><i class="fas fa-user-plus me-1"></i>Registrar</a></li>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="../M_Usuarios/M_usuarios_registro.html">Registrate</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../M_Usuarios/M_usuarios_login.html">Inicia Sesion</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-<footer class="mt-5 border-top py-4">
-    <div class="container d-flex justify-content-between">
-        <p class="mb-0">©ADSO 2025</p>
-        <div class="d-flex gap-3">
+    <footer class="py-4">
+        <div class="icons">
             <i class="fa-brands fa-instagram"> CoffeeTivApp</i>
             <i class="fa-brands fa-x-twitter"> CoffeTivApp ADSO</i>
             <i class="fa-brands fa-facebook"> CoffeTivApp</i>
         </div>
-    </div>
-</footer>
+        <div class="p_footer">
+            <p>© ADSO 2025</p>
+        </div>
+    </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
