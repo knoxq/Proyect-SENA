@@ -1,15 +1,9 @@
-header {
-    display: flex;
-    padding: 2em;
-    background-color: #4E342E;
-    justify-content: space-between;
-    align-items: center;
-}
 
 /* MENU DESPLEGABLE */
 
 #lista_desplegable {
-    padding: 10px;
+    position: absolute;
+    z-index: 1040;
 }
 
 /*  BOTON PARA ABRIR EL MENU */
@@ -21,6 +15,9 @@ header {
     background: none;
     border: none;
     padding: 10px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
 }
 
 /*  BOTON OCULTO */
@@ -50,6 +47,7 @@ header {
     background-size: cover;
     background-position: center center;
     background-repeat: none;
+    z-index: 1039;
 }
 
 /* BOTON DE CERRAR */
@@ -81,6 +79,11 @@ header {
     left: 0;
 }
 
+body.menu-open #main-section {
+    margin-left: 250px;
+    transition: margin-left 0.3s ease;
+}
+
 
 header .title {
     display: flex;
@@ -101,6 +104,26 @@ header .icon{
     width: 50px;
 }
 
+.nav-header {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-header ul{
+    align-content: center;
+}
+
+.nav-header li {
+    margin-right: 20px;
+    justify-content: baseline;
+}
+
+.nav-header a{
+    text-decoration: none;
+    color: #F5E6D3;
+}
 .nav-header {
     list-style: none;
     padding: 0;
