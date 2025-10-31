@@ -26,30 +26,26 @@
                     <!-- BOTON PARA CERRAR -->
                     <label for="menu" class="menu_cerr"> ✖ </label>
                     <!-- NAVEGACION  -->
-                    <!-- ITEM CON SUBMENÚ (ACORDEÓN) -->
-            <li class="menu-item-with-submenu">
-                <input type="checkbox" id="reportes-toggle" class="submenu-toggle">
-                <label for="reportes-toggle">
-                    <a>
-                        Historial y reportes
-                        <span class="arrow">▼</span>
-                    </a>
-                </label>
-                <ul class="submenu">
-                    <li><a href="#gestion-lotes">Gestión de Lotes</a></li>
-                    <li><a href="#registros-exportacion">Registros de Exportación</a></li>
-                    <li><a href="#historial-completo">Historial Completo</a></li>
-                    <li><a href="#reportes-mensuales">Reportes Mensuales</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Registros
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="javascript:void(0)"
+                                    onclick="mostrarTabla('cultivos')">Registro de cultivos</a></li>
+                            <li><a class="dropdown-item" href="javascript:void(0)"
+                                    onclick="mostrarTabla('actividad')">Registro de actividad</a></li>
+                            <li><a class="dropdown-item" href="javascript:void(0)"
+                                    onclick="mostrarTabla('lote')">Registro de lote</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Alertas_y_recordatorios.html">Alertas y recordatorios</a></li>
+                    <li><a href="Inventario_de_insumos.html">Inventario de insumos</a></li>
+                    <li><a href="Asistencia_tecnica.html">Asistencia técnica</a></li>
+                    <li><a href="Historial_y _reportes.html">Historial y reportes</a></li>
                 </ul>
-            </li>
-        </ul>
-    </nav>
-
-    <div class="main-content">
-        <h1>Contenido Principal</h1>
-        <p>Haz clic en el menú hamburguesa (☰) en la esquina superior izquierda para abrir el menú lateral.</p>
-        <p>Luego haz clic en "Historial y reportes" para ver el submenú desplegarse.</p>
-    </div>
+            </nav>
             <nav class="navbar navbar-expand-lg navbar-coffee">
                 <div class="container-fluid">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
