@@ -259,6 +259,7 @@ table tr:hover {
 #mod_table2 {
     display: none;
 }
+
 footer {
     color: var(--cream-100);
     display: flex;
