@@ -26,20 +26,20 @@
                     <!-- BOTON PARA CERRAR -->
                     <label for="menu" class="menu_cerr"> ✖ </label>
                     <!-- NAVEGACION  -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Registros
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="javascript:void(0)"
-                                    onclick="mostrarTabla('cultivos')">Registro de cultivos</a></li>
-                            <li><a class="dropdown-item" href="javascript:void(0)"
-                                    onclick="mostrarTabla('actividad')">Registro de actividad</a></li>
-                            <li><a class="dropdown-item" href="javascript:void(0)"
-                                    onclick="mostrarTabla('lote')">Registro de lote</a></li>
-                        </ul>
-                    </li>
+                    <li class="menu-item-with-submenu">
+    <input type="checkbox" id="reportes-toggle" class="submenu-toggle">
+    <label for="reportes-toggle">
+        <a>
+            Historial y reportes
+            <span class="arrow">▼</span>
+        </a>
+    </label>
+    <ul class="submenu">
+        <li><a href="Historial_y_reportes.html#gestion-lotes">Gestión de Lotes</a></li>
+        <li><a href="Historial_y_reportes.html#registros">Registros de Exportación</a></li>
+        <li><a href="Historial_y_reportes.html">Ver Todo</a></li>
+    </ul>
+</li>
                     <li><a href="Alertas_y_recordatorios.html">Alertas y recordatorios</a></li>
                     <li><a href="Inventario_de_insumos.html">Inventario de insumos</a></li>
                     <li><a href="Asistencia_tecnica.html">Asistencia técnica</a></li>
