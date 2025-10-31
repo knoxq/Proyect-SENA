@@ -292,3 +292,9 @@ footer {
     display: block;
     }
 }
+
+.accordion-body ul {
+    display: block;
+    flex-direction: initial;
+    align-items: initial;
+}
