@@ -86,6 +86,11 @@ header {
     left: 0;
 }
 
+body.menu-open #main-section {
+    margin-left: 250px;
+    transition: margin-left 0.3s ease;
+}
+
 
 header .title {
     display: flex;

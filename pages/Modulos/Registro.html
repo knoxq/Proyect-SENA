@@ -57,7 +57,7 @@
 
         </div>
     </header>
-    <section>
+    <section id="main-section">
         <div class="container-fluid p-0">
             <div class="d-flex">
                 <div class="col-4 m-5">
@@ -111,7 +111,7 @@
             </div>
         </div>
     </section>
-    <footer class="mt-5 border-top py-4">
+    <footer class="mt-5 border-top py-4 ">
         <div class="container d-flex justify-content-between">
             <p class="mb-0">©ADSO 2025</p>
             <div class="d-flex gap-3">
@@ -124,6 +124,18 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script>
+        const menuCheckbox = document.getElementById('menu');
+        const body = document.querySelector('body');
+
+        menuCheckbox.addEventListener('change', function() {
+            if (this.checked) {
+                body.classList.add('menu-open');
+            } else {
+                body.classList.remove('menu-open');
+            }
+        });
+    </script>
 </body>
 
 </html>
