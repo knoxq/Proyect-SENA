@@ -68,7 +68,7 @@ header {
     color: #F5E6D3;
     text-decoration: none;
     border-bottom: 1px solid #F5E6D3;
-    transition: background 0.3s;
+    transition: background0.3s;
 }
 
 #lista_desplegable ul li a:hover {
