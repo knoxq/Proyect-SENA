@@ -9,7 +9,8 @@ header {
 /* MENU DESPLEGABLE */
 
 #lista_desplegable {
-    padding: 10px;
+    position: absolute;
+    z-index: 100;
 }
 
 /*  BOTON PARA ABRIR EL MENU */
@@ -21,6 +22,9 @@ header {
     background: none;
     border: none;
     padding: 10px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
 }
 
 /*  BOTON OCULTO */
@@ -50,6 +54,7 @@ header {
     background-size: cover;
     background-position: center center;
     background-repeat: none;
+    z-index: 99;
 }
 
 /* BOTON DE CERRAR */

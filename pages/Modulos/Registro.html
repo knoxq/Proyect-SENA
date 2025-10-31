@@ -14,23 +14,10 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-coffee">
-            <div class="container-fluid">
-                <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-                    <span class="fw-bold title d-flex align-items-center mx-0"> <span class="icono me-2"></span>
-                        CoffeeTivApp</span>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
-                        <nav id="lista_desplegable">
+        <nav id="lista_desplegable">
             <!-- BOTONES PARA ACTIVAR -->
             <input type="checkbox" id="menu">
-            <label for="menu" class="menu_act"> ☰ Menú </label>
+            <label for="menu" class="menu_act"> <i class="fas fa-bars"></i> </label>
 
             <!-- CONTENIDO MENU -->
             <ul>
@@ -44,7 +31,21 @@
                 <li><a href="../M_Exportacion/M_Exportacion.html">Exportaciones</a></li>
                 <li><a href="../M_Reportes.html">Reportes</a></li>
             </ul>
-        </nav><i
+        </nav>
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                    <span class="fw-bold title d-flex align-items-center mx-0"> <span class="icono me-2"></span>
+                        CoffeeTivApp</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                        <li class="nav-item"><a class="nav-link"
+                                href="../M_Usuarios/M_usuarios_login.html"><i
                                     class="fas fa-right-to-bracket me-1"></i>Iniciar Sesión</a></li>
                         <li class="nav-item"><a class="btn btn-register"
                                 href="../M_Usuarios/M_usuarios_registro.html"><i
