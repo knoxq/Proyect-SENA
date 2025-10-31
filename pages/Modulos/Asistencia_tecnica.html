@@ -11,34 +11,48 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-coffee">
-            <div class="container-fluid">
-                <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-                    <div class="dropdown">
-                        <span class="fw-bold title d-flex align-items-center mx-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span class="icono me-2"></span> CoffeeTivApp
-                        </span>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="Alertas_y_recordatorios.html">Alertas y recordatorios</a></li>
-                            <li><a class="dropdown-item" href="Asistencia_tecnica.html">Asistencia tecnica</a></li>
-                            <li><a class="dropdown-item" href="bienvenida.html">Bienvenida</a></li>
-                            <li><a class="dropdown-item" href="Historial_y _reportes.html">Historial y reportes</a></li>
-                            <li><a class="dropdown-item" href="Inventario_de_insumos.html">Inventario de insumos</a></li>
-                            <li><a class="dropdown-item" href="Registro.html">Registro</a></li>
+        <div class="container-fluid">
+            <nav id="lista_desplegable">
+                <!-- BOTONES PARA ACTIVAR -->
+                <input type="checkbox" id="menu">
+                <label for="menu" class="menu_act"><span class="fw-bold title d-flex align-items-center mx-0"> <span class="icono me-2"></span>
+                        CoffeeTivApp</span></label>
+                <!-- CONTENIDO MENU -->
+                <ul class="p-0">
+                    <!-- BOTON PARA CERRAR -->
+                    <label for="menu" class="menu_cerr"> ✖ </label>
+                    <!-- NAVEGACION  -->
+                    <li><a href="Registro.html">Registros</a></li>
+                    <li><a href="Alertas_y_recordatorios.html">Alertas y recordatorios</a></li>
+                    <li><a href="Inventario_de_insumos.html">Inventario de insumos</a></li>
+                    <li><a href="Asistencia_tecnica.html">Asistencia técnica</a></li>
+                    <li><a href="Historial_y _reportes.html">Historial y reportes</a></li>
+                </ul>
+                <!-- <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                    <span class="fw-bold title d-flex align-items-center mx-0"> <span class="icono me-2"></span>
+                        CoffeeTivApp</span>
+                </a> -->
+            </nav>
+            <nav class="navbar navbar-expand-lg navbar-coffee">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                            <li class="nav-item"><a class="nav-link" href="../M_Usuarios/M_usuarios_login.html"><i
+                                        class="fas fa-right-to-bracket me-1"></i>Iniciar Sesión</a></li>
+                            <li class="nav-item"><a class="btn btn-register"
+                                    href="../M_Usuarios/M_usuarios_registro.html"><i
+                                        class="fas fa-user-plus me-1"></i>Registrar</a></li>
                         </ul>
                     </div>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="../M_Usuarios/M_usuarios_registro.html">Registrate</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../M_Usuarios/M_usuarios_login.html">Inicia Sesion</a></li>
-                    </ul>
                 </div>
-            </div>
-        </nav>
+            </nav>
+
+        </div>
     </header>
     <footer class="py-4">
         <div class="icons">
