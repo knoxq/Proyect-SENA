@@ -1,10 +1,7 @@
-const menuCheckbox = document.getElementById('menu');
-const body = document.querySelector('body');
+function mostrarTabla(tabla) {
+    document.getElementById('tabla-cultivos').classList.add('d-none');
+    document.getElementById('tabla-actividad').classList.add('d-none');
+    document.getElementById('tabla-lote').classList.add('d-none');
 
-menuCheckbox.addEventListener('change', function() {
-    if (this.checked) {
-        body.classList.add('menu-open');
-    } else {
-        body.classList.remove('menu-open');
-    }
-});
+    document.getElementById('tabla-' + tabla).classList.remove('d-none');
+}
