@@ -24,9 +24,6 @@
             background: none;
             border: none;
             padding: 10px;
-            position: fixed;
-            top: 20px;
-            left: 20px;
             z-index: 1041;
         }
 
@@ -64,7 +61,7 @@
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
-            z-index: 1039;
+            z-index: 1042;
             overflow-y: auto;
             overflow-x: visible;
         }
@@ -178,29 +175,29 @@
         }
 
         /* Contenido principal */
-        .main-content {
+        #main-section {
             margin-left: 0;
             padding: 100px 40px 40px;
             max-width: 1200px;
         }
 
-        .main-content h1 {
+        #main-section h1 {
             color: #4E342E;
             margin-bottom: 20px;
         }
 
-        .main-content h2 {
+        #main-section h2 {
             color: #6D4C41;
             margin-top: 30px;
             margin-bottom: 15px;
         }
 
-        .main-content ol, .main-content ul {
+        #main-section ol, #main-section ul {
             margin-left: 20px;
             line-height: 1.8;
         }
 
-        .main-content li {
+        #main-section li {
             margin-bottom: 10px;
         }
 
