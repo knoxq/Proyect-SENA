@@ -172,40 +172,73 @@ header .icon{
     color: #6B8E23; /* color 3 */
     margin: 20px 0 10px;
 }
+/* ========== ACORDEÓN ========== */
 
-/* === ESTILOS PARA EL ACORDEÓN === */
-.menu-item-with-submenu {
+.menu-item-accordion {
     position: relative;
 }
 
-.menu-item-with-submenu > label > a {
+.accordion-toggle {
+    display: none;
+}
+
+.accordion-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 15px;
+    color: #F5E6D3;
     cursor: pointer;
+    transition: background 0.3s;
+    user-select: none;
 }
 
+.accordion-header:hover {
+    background: rgba(78, 52, 46, 0.7);
+}
 
+.accordion-icon {
+    transition: transform 0.3s ease;
+    margin-left: auto;
+}
 
-/* Submenú */
-.submenu {
-    max-height: 500px;
+.accordion-submenu {
+    list-style: none;
+    max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease;
-    background-color: rgba(0, 0, 0, 0.3);
+    transition: max-height 0.4s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0;
+    padding: 0;
 }
 
-.submenu li {
-    border-bottom: 1px solid rgba(245, 230, 211, 0.3);
+.accordion-submenu li {
+    border-bottom: 1px solid rgba(245, 230, 211, 0.2);
 }
 
-.submenu li:last-child {
+.accordion-submenu li:last-child {
     border-bottom: none;
 }
 
-.submenu a {
-    padding: 12px 15px 12px 30px !important;
+.accordion-submenu a {
+    display: block;
+    padding: 12px 15px 12px 40px !important;
+    color: #F5E6D3;
+    text-decoration: none;
     font-size: 14px;
+    transition: background 0.3s;
+}
+
+.accordion-submenu a:hover {
+    background: rgba(78, 52, 46, 0.5);
+}
+
+.accordion-toggle:checked ~ .accordion-submenu {
+    max-height: 500px;
+}
+
+.accordion-toggle:checked ~ .accordion-header .accordion-icon {
+    transform: rotate(180deg);
 }
 
 
