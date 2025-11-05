@@ -152,6 +152,7 @@ header .icon{
     align-items: center;
     padding: 20px;
 }
+
 /* Icono grande en el hero */
 .hero-icon {
     height: clamp(224px, 29vw, 512px);
