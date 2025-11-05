@@ -1,279 +1,215 @@
-header {
-    display: flex;
-    padding: 2em;
-    background-color: #4E342E;
-    justify-content: space-between;
-    align-items: center;
-}
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-/* MENU DESPLEGABLE */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFF8F1;
+            color: #333;
+        }
 
-#lista_desplegable {
-    position: absolute;
-    z-index: 1040;
-}
+        /* MENU DESPLEGABLE */
+        #lista_desplegable {
+            position: fixed;
+            z-index: 1040;
+        }
 
-/*  BOTON PARA ABRIR EL MENU */
+        /* BOTON PARA ABRIR EL MENU */
+        .menu_act {
+            cursor: pointer;
+            font-size: 20px;
+            color: #F5E6D3;
+            background: none;
+            border: none;
+            padding: 10px;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1041;
+        }
 
-.menu_act {
-    cursor: pointer;
-    font-size: 20px;
-    color: #F5E6D3;
-    background: none;
-    border: none;
-    padding: 10px;
-    position: fixed;
-    top: 20px;
-    left: 20px;
-}
+        .icono {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background: #F5E6D3;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
 
-/*  BOTON OCULTO */
+        /* BOTON OCULTO */
+        #menu {
+            display: none;
+        }
 
-#menu {
-    display: none;
-}
+        /* MENU DESPLEGABLE PRINCIPAL */
+        #lista_desplegable > ul {
+            list-style: none;
+            position: fixed;
+            top: 0;
+            left: -270px;
+            width: 250px;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            transition: left 0.3s ease;
+            box-shadow: 2px 0 8px rgba(0, 0, 0, 0.3);
+            background-image: linear-gradient(
+                0deg,
+                rgba(0, 0, 0, 0.6),
+                rgba(0, 0, 0, 0.6)
+            ), url(https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=500);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            z-index: 1039;
+            overflow-y: auto;
+            overflow-x: visible;
+        }
 
-/* MENU DESPLEGABLE */
+        /* BOTON DE CERRAR */
+        .menu_cerr {
+            align-self: flex-end;
+            cursor: pointer;
+            font-size: 22px;
+            color: #F5E6D3;
+            padding: 15px;
+            display: block;
+        }
 
-#lista_desplegable ul{
-    list-style: none;
-    position: fixed;
-    top: 0;
-    left: -250px;
-    width: 250px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    transition: left 0.3s ease;
-    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.3);
-    background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.6),
-        rgba(0, 0, 0, 0.6)
-    ), url(../img/cafe_index.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: none;
-    z-index: 1039;
-}
+        /* Items del menú principal */
+        #lista_desplegable > ul > li {
+            border-bottom: 1px solid rgba(245, 230, 211, 0.5);
+        }
 
-/* BOTON DE CERRAR */
+        #lista_desplegable > ul > li > a {
+            display: block;
+            padding: 15px;
+            color: #F5E6D3;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
 
-.menu_cerr{
-    align-self: flex-end;
-    cursor: pointer;
-    font-size: 22px;
-    color: #F5E6D3;
-    padding: 15px;
-}
+        #lista_desplegable > ul > li > a:hover {
+            background: rgba(78, 52, 46, 0.7);
+        }
 
-#lista_desplegable ul li a {
-    display: block;
-    padding: 15px;
-    color: #F5E6D3;
-    text-decoration: none;
-    border-bottom: 1px solid #F5E6D3;
-    transition: background 0.3s;
-}
+        /* MOSTRAR EL MENU CUANDO EL CHECKBOX ESTE ACTIVO */
+        #menu:checked ~ ul {
+            left: 0;
+        }
 
-#lista_desplegable ul li a:hover {
-    background: rgba(78, 52, 46, 0.7);
-}
+        /* ========== ACORDEÓN ========== */
+        
+        /* Contenedor del item con acordeón */
+        .menu-item-accordion {
+            position: relative;
+        }
 
-/* MOSTRAR EL MENU CUANDO EL CHECKBOX ESTE ACTIVO */
+        /* Ocultar checkbox del acordeón */
+        .accordion-toggle {
+            display: none;
+        }
 
-#menu:checked ~ ul {
-    left: 0;
-}
+        /* Label clickeable (el título "Historial y reportes") */
+        .accordion-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            color: #F5E6D3;
+            cursor: pointer;
+            transition: background 0.3s;
+            user-select: none;
+        }
 
-body.menu-open #main-section {
-    margin-left: 250px;
-    transition: margin-left 0.3s ease;
-}
+        .accordion-header:hover {
+            background: rgba(78, 52, 46, 0.7);
+        }
 
+        /* Flecha del acordeón */
+        .accordion-icon {
+            transition: transform 0.3s ease;
+            margin-left: auto;
+        }
 
-header .title {
-    display: flex;
-    color: #F5E6D3;
-    font-size: 2em;
-    margin: 0;
-    text-decoration:underline;
+        /* Contenido del acordeón (el submenú) */
+        .accordion-submenu {
+            list-style: none;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+            background-color: rgba(0, 0, 0, 0.5);
+            margin: 0;
+            padding: 0;
+        }
 
-}
+        .accordion-submenu li {
+            border-bottom: 1px solid rgba(245, 230, 211, 0.2);
+        }
 
-header .icon{
-    margin-right: 15px;
-    display: flex;
-    background-image: url(../img/icono.png);
-    background-size: cover;
-    background-position: center center;
-    height: 50px;
-    width: 50px;
-}
+        .accordion-submenu li:last-child {
+            border-bottom: none;
+        }
 
-.nav-header {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
+        .accordion-submenu a {
+            display: block;
+            padding: 12px 15px 12px 40px;
+            color: #F5E6D3;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background 0.3s;
+        }
 
-.nav-header ul{
-    align-content: center;
-}
+        .accordion-submenu a:hover {
+            background: rgba(78, 52, 46, 0.5);
+        }
 
-.nav-header li {
-    margin-right: 20px;
-    justify-content: baseline;
-}
+        /* Cuando el checkbox está marcado: expandir */
+        .accordion-toggle:checked ~ .accordion-submenu {
+            max-height: 500px;
+        }
 
-.nav-header a{
-    text-decoration: none;
-    color: #F5E6D3;
-}
-.nav-header {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
+        /* Rotar la flecha cuando está expandido */
+        .accordion-toggle:checked ~ .accordion-header .accordion-icon {
+            transform: rotate(180deg);
+        }
 
-.nav-header ul{
-    align-content: center;
-}
+        /* Contenido principal */
+        .main-content {
+            margin-left: 0;
+            padding: 100px 40px 40px;
+            max-width: 1200px;
+        }
 
-.nav-header li {
-    margin-right: 20px;
-    justify-content: baseline;
-}
+        .main-content h1 {
+            color: #4E342E;
+            margin-bottom: 20px;
+        }
 
-.nav-header a{
-    text-decoration: none;
-    color: #F5E6D3;
-}
+        .main-content h2 {
+            color: #6D4C41;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
 
-/* === MAIN CONTENT CAFETEROS === */
-.main-content {
-    padding: 20px;
-    background-color: #FAFAFA; /* color 6 */
-    color: #333333; /* color 5 */
-    font-family: Arial, sans-serif;
-}
+        .main-content ol, .main-content ul {
+            margin-left: 20px;
+            line-height: 1.8;
+        }
 
-/* TITULOS */
-.main-content h2 {
-    color: #4E342E; /* color 1 */
-    margin-bottom: 15px;
-    border-bottom: 2px solid #F5E6D3; /* color 2 */
-    padding-bottom: 5px;
-}
+        .main-content li {
+            margin-bottom: 10px;
+        }
 
-.main-content h3 {
-    color: #6B8E23; /* color 3 */
-    margin: 20px 0 10px;
-}
-/* ========== MENÚ LATERAL BASE ========== */
-#lista_desplegable > ul {
-    list-style: none;
-    position: fixed;
-    top: 0;
-    left: -250px;
-    width: 250px;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    transition: left 0.3s ease;
-    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.3);
-    background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.6),
-        rgba(0, 0, 0, 0.6)
-    ), url(../img/cafe_index.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    z-index: 1039;
-    overflow-y: auto;
-    overflow-x: visible;
-}
-
-/* ========== ACORDEÓN CORREGIDO ========== */
-
-.menu-item-accordion {
-    position: relative;
-}
-
-.accordion-toggle {
-    display: none;
-}
-
-.accordion-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    color: #F5E6D3;
-    cursor: pointer;
-    transition: background 0.3s;
-    user-select: none;
-    border-bottom: 1px solid rgba(245, 230, 211, 0.5);
-}
-
-.accordion-header:hover {
-    background: rgba(78, 52, 46, 0.7);
-}
-
-.accordion-icon {
-    transition: transform 0.3s ease;
-    margin-left: auto;
-    font-size: 12px;
-}
-
-.accordion-submenu {
-    list-style: none;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease;
-    background-color: rgba(0, 0, 0, 0.5);
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-
-.accordion-submenu li {
-    border-bottom: 1px solid rgba(245, 230, 211, 0.2);
-    width: 100%;
-}
-
-.accordion-submenu li:last-child {
-    border-bottom: 1px solid rgba(245, 230, 211, 0.5);
-}
-
-.accordion-submenu a {
-    display: block !important;
-    padding: 12px 15px 12px 40px !important;
-    color: #F5E6D3 !important;
-    text-decoration: none !important;
-    font-size: 14px;
-    transition: background 0.3s;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.accordion-submenu a:hover {
-    background: rgba(78, 52, 46, 0.5) !important;
-}
-
-/* EXPANDIR ACORDEÓN */
-.accordion-toggle:checked ~ .accordion-submenu {
-    max-height: 600px;
-}
-
-.accordion-toggle:checked ~ .accordion-header .accordion-icon {
-    transform: rotate(180deg);
-}
+        .highlight {
+            background-color: #F5E6D3;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
 
 
 
