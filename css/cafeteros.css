@@ -185,19 +185,11 @@ header .icon{
     cursor: pointer;
 }
 
-.arrow {
-    transition: transform 0.3s ease;
-    font-size: 12px;
-}
 
-/* Checkbox oculto para el acordeón */
-.submenu-toggle {
-    display: none;
-}
 
 /* Submenú */
 .submenu {
-    max-height: 0;
+    max-height: 500px;
     overflow: hidden;
     transition: max-height 0.3s ease;
     background-color: rgba(0, 0, 0, 0.3);
@@ -216,14 +208,8 @@ header .icon{
     font-size: 14px;
 }
 
-/* Cuando el checkbox está marcado */
-.submenu-toggle:checked ~ .submenu {
-    max-height: 500px;
-}
 
-.submenu-toggle:checked ~ label .arrow {
-    transform: rotate(180deg);
-}
+
 
 
 /* FORMULARIOS */
