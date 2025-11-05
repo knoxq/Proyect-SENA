@@ -27,14 +27,7 @@
             z-index: 1041;
         }
 
-        .icono {
-            display: inline-block;
-            width: 30px;
-            height: 30px;
-            background: #F5E6D3;
-            border-radius: 50%;
-            margin-right: 10px;
-        }
+
 
         /* BOTON OCULTO */
         #menu {
@@ -74,6 +67,7 @@
             color: #F5E6D3;
             padding: 15px;
             display: block;
+            visibility: hidden;
         }
 
         /* Items del menú principal */

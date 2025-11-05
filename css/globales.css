@@ -155,7 +155,25 @@ h1, h2, h3 {
 }
 
 .footer-custom {
-    position: relative;
-    bottom: 0;
     width: 100%;
+    background-color: var(--coffee-800);
+    color: var(--cream-100);
+    padding: 20px 0;
+}
+
+.footer-icons i {
+    color: var(--cream-100);
+    transition: color 0.3s ease;
+}
+
+.footer-icons i:hover {
+    color: var(--accent);
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 160px);
+    padding: 20px;
 }
