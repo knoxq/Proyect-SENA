@@ -8,7 +8,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../../css/globales.css">
     <link rel="stylesheet" href="../../css/cafeteros.css">
-    <title> CoffeeTivApp Cafeteros </title>
+    <title> CoffeeTivApp | Registro de Cultivos </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
@@ -66,95 +66,75 @@
             </div>
         </nav>
     </header>
-    <section id="main-section">
-        <div class="main-container">
-            <div class="container-fluid">
-                <div class="row justify-content-center">
-                    <div class="col-md-5 col-lg-4 m-3">
-                        <form>
-                            <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp">
-                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleInputPassword1" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1">
-                            </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                        </form>
+    <main class="container mt-5">
+        <h1 class="mb-4 text-center">Registro de Cultivos</h1>
+
+        <div class="row">
+            <!-- Formulario para agregar cultivos -->
+            <div class="col-md-4">
+                <h2>Agregar Cultivo</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="variety" class="form-label">Variedad de Café</label>
+                        <input type="text" class="form-control" id="variety" placeholder="Ej: Caturra">
                     </div>
-                    <div class="col-md-7 col-lg-6 m-3">
-                        <table class="table" id="tabla-cultivos">
-                            <thead>
-                                <tr>
-                                    <th colspan="4" class="text-center">Registro de Cultivos</th>
-                                </tr>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">First</th>
-                                    <th scope="col">Last</th>
-                                    <th scope="col">Handle</th>
-                                </tr>
-                            </thead>
-                            <tbody class="table-group-divider">
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <table class="table d-none" id="tabla-actividad">
-                            <thead>
-                                <tr>
-                                    <th colspan="4" class="text-center">Registro de Actividad</th>
-                                </tr>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">Actividad</th>
-                                    <th scope="col">Fecha</th>
-                                    <th scope="col">Responsable</th>
-                                </tr>
-                            </thead>
-                            <tbody class="table-group-divider">
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Riego</td>
-                                    <td>2025-10-31</td>
-                                    <td>Juan</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <table class="table d-none" id="tabla-lote">
-                            <thead>
-                                <tr>
-                                    <th colspan="4" class="text-center">Registro de Lote</th>
-                                </tr>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">Lote</th>
-                                    <th scope="col">Variedad</th>
-                                    <th scope="col">Altura</th>
-                                </tr>
-                            </thead>
-                            <tbody class="table-group-divider">
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Lote A</td>
-                                    <td>Caturra</td>
-                                    <td>1800m</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="mb-3">
+                        <label for="altitude" class="form-label">Altura (msnm)</label>
+                        <input type="number" class="form-control" id="altitude" placeholder="Ej: 1800">
                     </div>
-                </div>
+                    <div class="mb-3">
+                        <label for="planting-date" class="form-label">Fecha de Siembra</label>
+                        <input type="date" class="form-control" id="planting-date">
+                    </div>
+                    <div class="mb-3">
+                        <label for="farm-origin" class="form-label">Finca de Origen</label>
+                        <select class="form-select" id="farm-origin">
+                            <option selected>Seleccione una finca</option>
+                            <option value="1">Finca La Esperanza</option>
+                            <option value="2">Finca El Porvenir</option>
+                            <option value="3">Finca Santa Rosa</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Registrar Cultivo</button>
+                </form>
+            </div>
+
+            <!-- Tabla de cultivos registrados -->
+            <div class="col-md-8">
+                <h2>Cultivos Registrados</h2>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Variedad</th>
+                            <th scope="col">Altura</th>
+                            <th scope="col">Fecha de Siembra</th>
+                            <th scope="col">Finca</th>
+                            <th scope="col">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Caturra</td>
+                            <td>1800m</td>
+                            <td>2023-05-15</td>
+                            <td>Finca La Esperanza</td>
+                            <td><button class="btn btn-danger btn-sm">Eliminar</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Castillo</td>
+                            <td>1750m</td>
+                            <td>2023-06-01</td>
+                            <td>Finca El Porvenir</td>
+                            <td><button class="btn btn-danger btn-sm">Eliminar</button></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
-    </section>
+    </main>
     <footer class="mt-5 border-top py-4 footer-custom">
         <div class="container d-flex justify-content-between">
             <p class="mb-0">©ADSO 2025</p>

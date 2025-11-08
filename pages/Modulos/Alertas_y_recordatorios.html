@@ -66,37 +66,26 @@
             </div>
         </nav>
     </header>
-    <main id="platano">
-    <section id="banano">
-        <h2 class="no_se">Registrar Compra</h2>
-        <form class="uno" action="#mensaje">
-        <p class="texto">Nombre del Caficultor:</p>
-        <input type="text" name="caficultor" placeholder="Ej: Juan Pérez" class="cuestionario">
+    <main class="container mt-5">
+        <h1 class="mb-4 text-center">Alertas y Recordatorios</h1>
 
-        <p class="texto">Cantidad de Café (kg):</p>
-        <input type="number" name="cantidad" class="cuestionario">
-
-        <p class="texto">Precio por kg ($COP):</p>
-        <input type="number" name="precio" class="cuestionario">
-
-        <p class="texto">Finca Asociada:</p>
-        <select class="finca">
-            <option value="">Selecciona una finca</option>
-            <option value="finca1">Finca La Esperanza</option>
-            <option value="finca2">Finca El Porvenir</option>
-            <option value="finca3">Finca Santa Rosa</option>
-        </select>
-
-        <button type="submit" class="hola">Registrar Compra</button>
-        </form>
-    </section>
-
-    <div id="mensaje">
-        <div class="contenido-mensaje">
-        <h2 class="nose">✅ Su compra ha sido un éxito</h2>
-        <a id="simio" href="#">Volver</a>
+        <div class="alert alert-warning" role="alert">
+            <h4 class="alert-heading">Alerta de Roya</h4>
+            <p>Se ha detectado un aumento en la probabilidad de roya en la Finca La Esperanza. Se recomienda monitorear los lotes 5 y 6.</p>
+            <hr>
+            <p class="mb-0">Fecha de detección: 2025-11-08</p>
         </div>
-    </div>
+
+        <div class="alert alert-info" role="alert">
+            <h4 class="alert-heading">Recordatorio de Fertilización</h4>
+            <p>El lote 2 de la Finca El Porvenir necesita fertilización. La fecha recomendada es el 15 de Noviembre de 2025.</p>
+        </div>
+
+        <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading">Cosecha Finalizada</h4>
+            <p>La cosecha del lote 1 en la Finca Santa Rosa ha finalizado con éxito.</p>
+        </div>
+
     </main>
     <footer class="mt-5 border-top py-4 footer-custom">
         <div class="container d-flex justify-content-between">

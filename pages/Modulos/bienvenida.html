@@ -8,6 +8,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../../css/globales.css">
     <link rel="stylesheet" href="../../css/cafeteros.css">
+    <link rel="stylesheet" href="../../css/bienvenida.css">
     <title>Bienvenida</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
@@ -67,15 +68,66 @@
         </nav>
     </header>
     <!-- CONTENIDO PRINCIPAL -->
-    <main class="main-content-bienvenida text-center">
-        <div class="container-fluid my-5 p-5 display-5">
-                <span class="icon hero-icon"></span>
-                <img id="imgedit" src="" alt="" class="img-fluid d-none">
+    <main class="container mt-5">
+        <div class="text-center border-bottom pb-4 mb-5">
             <h1>Bienvenido a CoffeeTivApp</h1>
-            <p>Tu aplicación para la gestión de cultivos de café.</p>
+            <p class="lead">Tu solución integral para la gestión de cultivos de café.</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-seedling fa-3x text-success mb-3"></i>
+                        <h5 class="card-title">Registro de Cultivos</h5>
+                        <p class="card-text">Lleva un control detallado de tus cultivos, incluyendo variedad, altura y fechas de siembra.</p>
+                        <a href="Registro.html" class="btn btn-primary">Ir a Registro</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-boxes fa-3x text-info mb-3"></i>
+                        <h5 class="card-title">Inventario de Insumos</h5>
+                        <p class="card-text">Gestiona tu inventario de fertilizantes, fungicidas y otros insumos agrícolas.</p>
+                        <a href="Inventario_de_insumos.html" class="btn btn-primary">Ir a Inventario</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-hands-helping fa-3x text-warning mb-3"></i>
+                        <h5 class="card-title">Asistencia Técnica</h5>
+                        <p class="card-text">Solicita y gestiona la asistencia técnica para resolver problemas en tus cultivos.</p>
+                        <a href="Asistencia_tecnica.html" class="btn btn-primary">Ir a Asistencia</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-bell fa-3x text-danger mb-3"></i>
+                        <h5 class="card-title">Alertas y Recordatorios</h5>
+                        <p class="card-text">Recibe notificaciones sobre plagas, enfermedades y tareas pendientes.</p>
+                        <a href="Alertas_y_recordatorios.html" class="btn btn-primary">Ir a Alertas</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-chart-line fa-3x text-primary mb-3"></i>
+                        <h5 class="card-title">Historial y Reportes</h5>
+                        <p class="card-text">Consulta el historial de tus lotes y genera reportes de exportación.</p>
+                        <a href="Historial_y _reportes.html" class="btn btn-primary">Ir a Historial</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
-    <footer class="mt-5 border-top py-4 footer-custom fixed-bottom">
+    <footer class="mt-5 border-top py-4 footer-custom">
         <div class="container d-flex justify-content-between">
             <p class="mb-0">©ADSO 2025</p>
             <div class="d-flex gap-3 footer-icons">

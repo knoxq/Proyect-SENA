@@ -8,7 +8,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../../css/globales.css">
     <link rel="stylesheet" href="../../css/cafeteros.css">
-    <title>Control de Calidad</title>
+    <title>Inventario de Insumos</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
@@ -67,74 +67,71 @@
         </nav>
     </header>
     
-    <section id="caja">
-        
-        <div class="centro">
+    <main class="container mt-5">
+        <h1 class="mb-4 text-center">Inventario de Insumos</h1>
 
-            <div class="formulario-box">
-
-                <div class="titulo">
-                    <h1>Control de Calidad</h1>
-                </div>
-
-                <div>
-                    <h2>ID de Muestra del café: </h2>
-                    <form action="">
-                    <input type="text" name="id" placeholder="Ej:123456789">
-                    </form>
-                </div>
-                
-                <div>
-                    <h2>Entidad de Evaluación: </h2>
-                    <form action="">
-                    <input type="text" name="entidad" placeholder="Ej:Laboratorio Nacional de Café" size="25">
-                    </form>
-                </div>
-
-                <div class="color_blanco">
-                    <h2>¿La muestra fue enviada? </h2>
-                    <select name="muestra_enviada" id="muestra_enviada">
-                        <option value="selecciona" hidden>Selecciona una opción</option>
-                        <option value="si">Sí</option>
-                        <option value="no">No</option>
-                    </select>
-                </div>
-
-                <div class="color_blanco">
-                    <h2>Resultado de Evaluación: </h2>
-                    <select name="resultado_evaluacion" id="resultado_evaluacion">
-                        <option value="selecciona" hidden>Selecciona una opción</option>
-                        <option value="malo">Malo</option>
-                        <option value="regular">Regular</option>
-                        <option value="bueno">Bueno</option>
-                        <option value="excelente">Excelente</option>
-                    </select>
-                </div>
-
-                <div class="color_blanco">
-                    <h2>¿Apto para exportación? </h2>
-                    <select name="apto" id="apto">
-                        <option value="selecciona" hidden>Selecciona una opción</option>
-                        <option value="si_bueno">Sí (si es Bueno o Excelente)</option>
-                        <option value="no2">No</option>
-                    </select><br>
-                </div>
-                
-                <input type="checkbox" id="check">
-
-                <div class="color_blanco">
-                    <label for="check">Registrar Evaluación</label>
-                </div>
-
-                <div class="mensaje">
-                    ✅ Registro exitoso
-                </div>
-
+        <div class="row">
+            <!-- Formulario para agregar insumos -->
+            <div class="col-md-4">
+                <h2>Agregar Insumo</h2>
+                <form id="inventory-form">
+                    <div class="mb-3">
+                        <label for="item-name" class="form-label">Nombre del Insumo</label>
+                        <input type="text" class="form-control" id="item-name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="item-quantity" class="form-label">Cantidad</label>
+                        <input type="number" class="form-control" id="item-quantity" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="item-unit" class="form-label">Unidad</label>
+                        <select class="form-select" id="item-unit">
+                            <option>kg</option>
+                            <option>Litros</option>
+                            <option>Unidades</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Agregar</button>
+                </form>
             </div>
 
+            <!-- Tabla de inventario -->
+            <div class="col-md-8">
+                <h2>Insumos en Inventario</h2>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Insumo</th>
+                            <th scope="col">Cantidad</th>
+                            <th scope="col">Unidad</th>
+                            <th scope="col">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="inventory-table">
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Fertilizante 15-15-15</td>
+                            <td>50</td>
+                            <td>kg</td>
+                            <td>
+                                <button class="btn btn-sm btn-danger">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Fungicida</td>
+                            <td>10</td>
+                            <td>Litros</td>
+                            <td>
+                                <button class="btn btn-sm btn-danger">Eliminar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-
-    </section>
+    </main>
 
     <footer class="mt-5 border-top py-4 footer-custom">
         <div class="container d-flex justify-content-between">
@@ -147,5 +144,6 @@
         </div>
     </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="../../js/modulos/inventario.js"></script>
 </body>
 </html>

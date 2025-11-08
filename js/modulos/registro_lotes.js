@@ -1,26 +1,23 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const form = document.querySelector('form');
-    const tableBody = document.querySelector('tbody');
+    const form = document.getElementById('lote-form');
+    const tableBody = document.getElementById('lotes-table');
 
     form.addEventListener('submit', function (e) {
         e.preventDefault();
 
+        const loteName = document.getElementById('lote-name').value;
         const variety = document.getElementById('variety').value;
-        const altitude = document.getElementById('altitude').value;
-        const plantingDate = document.getElementById('planting-date').value;
-        const farm = document.getElementById('farm-origin');
-        const farmName = farm.options[farm.selectedIndex].text;
+        const status = document.getElementById('lote-status').value;
+        const farm = document.getElementById('farm-origin').value;
 
-        if (variety && altitude && plantingDate && farm.value) {
-            const rowCount = tableBody.rows.length;
+        if (loteName && variety && status && farm) {
             const newRow = tableBody.insertRow();
 
             newRow.innerHTML = `
-                <th scope="row">${rowCount + 1}</th>
+                <td>${loteName}</td>
                 <td>${variety}</td>
-                <td>${altitude}m</td>
-                <td>${plantingDate}</td>
-                <td>${farmName}</td>
+                <td>${status}</td>
+                <td>${farm}</td>
                 <td><button class="btn btn-danger btn-sm">Eliminar</button></td>
             `;
 
