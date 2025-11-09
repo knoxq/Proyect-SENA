@@ -1,0 +1,149 @@
+.chatbox-container {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    z-index: 1050;
+}
+
+.chatbox-toggler {
+    width: 60px;
+    height: 60px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.chatbox-toggler:hover {
+    transform: scale(1.1);
+}
+
+.chatbox {
+    width: 350px;
+    height: 450px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
+                0 32px 64px -48px rgba(0,0,0,0.5);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+}
+
+.chatbox.active {
+    display: flex;
+}
+
+.chatbox-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+}
+
+.chatbox-header .close-btn {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.chatbox-body {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto;
+}
+
+.message {
+    margin-bottom: 15px;
+}
+
+.message p {
+    padding: 10px 15px;
+    border-radius: 20px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.message.received p {
+    background-color: #f1f1f1;
+    color: black;
+    border-bottom-left-radius: 0;
+}
+
+.message.sent p {
+    background-color: var(--primary-color);
+    color: white;
+    border-bottom-right-radius: 0;
+    margin-left: auto;
+}
+
+.chatbox-footer {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.chatbox-footer input {
+    flex-grow: 1;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.chatbox-footer button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.typing-indicator p {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: #f1f1f1;
+    border-bottom-left-radius: 0;
+}
+
+.typing-indicator .dot {
+    height: 8px;
+    width: 8px;
+    background-color: #999;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 2px;
+    animation: typing 1.2s infinite;
+}
+
+.typing-indicator .dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.typing-indicator .dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes typing {
+    0%, 60%, 100% {
+        opacity: 0.2;
+    }
+    20% {
+        opacity: 1;
+    }
+}
